@@ -5,18 +5,13 @@ progress persistence, and replay rules.
 
 ## Group Unlock Model
 
-Groups unlock **sequentially**. A player must complete all three puzzles in group N before group
-N+1 becomes accessible. Groups 2–7 are locked on first load; only Group 1 is available
-immediately.
-
-**Rationale:** Each group introduces a meaningfully different concept. Encountering audio
-steganography before understanding classical ciphers or text encoding would undermine the intended
-learning arc. Sequential gating enforces the pedagogical order without ambiguity.
+All **7 groups are available from the start**. Players are not required to complete one group
+before accessing another. Each group independently starts with its first puzzle unlocked.
 
 ## Within-Group Puzzle Gating
 
-Puzzles within a group are also **sequential**. Puzzle N-2 is locked until N-1 is complete;
-N-3 until N-2. Players always enter a group at its first puzzle.
+Puzzles within a group are **sequential**. Puzzle N-2 is locked until N-1 is complete;
+N-3 until N-2. Every group starts with its first puzzle (N-1) unlocked.
 
 **Rationale:** Within-group puzzles escalate in difficulty (e.g., Caesar → ROT-13 variant →
 Vigenère). The later puzzles assume familiarity with the earlier technique, so gating prevents
@@ -69,7 +64,7 @@ with different inputs after solving a puzzle without losing their place in the g
 
 | Decision | Choice |
 |---|---|
-| Group unlock order | Sequential (complete group N to unlock N+1) |
+| Group unlock order | All groups open from the start |
 | Within-group puzzle order | Sequential (complete N-1 to unlock N-2) |
 | Progress persistence | `localStorage` via `src/state.js` |
 | Scoring / rating | None (deferred to Phase 4) |
