@@ -13,7 +13,8 @@ Puzzles are organized into **concept groups** — each group introduces one idea
 | Layer | Technology |
 |---|---|
 | Puzzle generation & seeding | Python |
-| Web frontend | Node / browser JS |
+| Web frontend | Vanilla JS + Vite |
+| State management | ES module + `localStorage` |
 | Hosting | Static (no server required for play) |
 
 ## Puzzle Structure
