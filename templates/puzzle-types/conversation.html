@@ -1,36 +1,72 @@
 {% extends "base.html" %}
 
 {% block extra_style %}
-.exchange-log {
-  border: 1px solid #2a2a2a;
-  padding: 1rem;
-  margin-bottom: 1.5rem;
-  background: #111;
-}
-
-.exchange {
-  display: flex;
-  gap: 0.75rem;
-  margin-bottom: 0.75rem;
-  align-items: flex-start;
-}
-.exchange:last-child { margin-bottom: 0; }
-
-.speaker {
-  min-width: 80px;
+.sms-header {
+  text-align: center;
   font-size: 0.75rem;
-  font-weight: bold;
-  color: #7ec8a4;
-  padding-top: 0.15rem;
-  text-transform: uppercase;
+  color: #555;
+  margin-bottom: 1rem;
   letter-spacing: 0.05em;
 }
 
-.message {
+.sms-thread {
+  border: 1px solid #1e1e1e;
+  border-radius: 12px;
+  background: #0a0a0a;
+  padding: 1rem 0.75rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.sms-row {
+  display: flex;
+  align-items: flex-end;
+  gap: 0.5rem;
+}
+
+.sms-row.sent {
+  flex-direction: row-reverse;
+}
+
+.sms-avatar {
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  background: #222;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.6rem;
+  color: #777;
+  flex-shrink: 0;
+  text-transform: uppercase;
+}
+
+.sms-row.sent .sms-avatar {
+  background: #1a3a2a;
+  color: #7ec8a4;
+}
+
+.sms-bubble {
+  max-width: 68%;
+  padding: 0.5rem 0.8rem;
   font-size: 0.95rem;
-  color: #ccc;
   line-height: 1.5;
   word-break: break-word;
+}
+
+.sms-row.received .sms-bubble {
+  background: #1e1e1e;
+  color: #e0e0e0;
+  border-radius: 18px 18px 18px 4px;
+}
+
+.sms-row.sent .sms-bubble {
+  background: #1a4a30;
+  color: #d6f0e3;
+  border-radius: 18px 18px 4px 18px;
 }
 
 .question {
@@ -44,12 +80,21 @@
 {% endblock %}
 
 {% block puzzle_body %}
-<div class="exchange-log">
+{% set first_speaker = content.exchanges[0].speaker %}
+<div class="sms-thread">
+  <div class="sms-header">{{ first_speaker }} &amp; {{ content.exchanges[1].speaker }}</div>
   {% for ex in content.exchanges %}
-  <div class="exchange">
-    <span class="speaker">{{ ex.speaker }}</span>
-    <span class="message">{{ ex.text }}</span>
+  {% if ex.speaker == first_speaker %}
+  <div class="sms-row received">
+    <div class="sms-avatar">{{ ex.speaker[0] }}</div>
+    <div class="sms-bubble">{{ ex.text }}</div>
   </div>
+  {% else %}
+  <div class="sms-row sent">
+    <div class="sms-avatar">{{ ex.speaker[0] }}</div>
+    <div class="sms-bubble">{{ ex.text }}</div>
+  </div>
+  {% endif %}
   {% endfor %}
 </div>
 

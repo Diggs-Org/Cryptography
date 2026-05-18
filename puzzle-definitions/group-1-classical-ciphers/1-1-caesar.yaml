@@ -3,24 +3,45 @@ id: "1-1"
 group_id: 1
 type: conversation
 title: "Caesar Cipher"
-flavor: "Alice and Bob have been passing notes. Something seems off about their writing."
+flavor: "You found an unlocked phone. Two contacts have been texting about someone — but one reply is unreadable."
 
 # RNG call order is fixed — never reorder after first publish.
 params:
-  shift:    !rng rand_int(1, 25)
-  location: !rng meeting_location()
+  shift:     !rng rand_int(1, 25)
+  names:
+    - "SARAH"
+    - "JAMES"
+    - "EMILY"
+    - "OLIVER"
+    - "SOPHIE"
+    - "MARCUS"
+    - "DIANA"
+    - "JORDAN"
+    - "CLAIRE"
+    - "RYAN"
+  questions:
+    - "wait what's her name again"
+    - "what was the name you mentioned"
+    - "who are we supposed to meet"
+    - "you never told me their name"
+    - "ok but what's the contact's name"
+    - "remind me who we're talking about"
+    - "what did she say her name was"
+    - "who is it"
+  name:      !rng rand_choice(names)
+  question:  !rng rand_choice(questions)
 
 content:
   exchanges:
-    - speaker: Alice
-      text: !gen caesar_encode(location, shift)
-    - speaker: Bob
-      text: "Understood. I'll be there."
-    - speaker: Alice
-      text: !gen caesar_encode("CONFIRMED DO NOT BE LATE", shift)
-  question: "Where will Alice and Bob meet?"
+    - speaker: Alex
+      text: !gen identity(question)
+    - speaker: Sam
+      text: !gen caesar_encode(name, shift)
+    - speaker: Alex
+      text: "got it, thx"
+  question: "What name did Sam encode in their reply?"
 
-answer: !gen identity(location)
+answer: !gen identity(name)
 
 hints:
   - "Every letter has been shifted the same number of positions forward in the alphabet."
