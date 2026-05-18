@@ -25,17 +25,35 @@ Game
 ├── Group 1: Classical Ciphers
 │   ├── Puzzle 1-1  (Caesar cipher)
 │   ├── Puzzle 1-2  (ROT-13 variant)
-│   └── Puzzle 1-3  (Vigenère)
-├── Group 2: Frequency Analysis
-│   ├── Puzzle 2-1  (letter frequency)
-│   ├── Puzzle 2-2  (bigram analysis)
-│   └── Puzzle 2-3  (index of coincidence)
-├── Group 3: [TBD — see CRYPT-* tickets]
-│   └── ...
-└── Final Puzzle  (multi-concept combination)
+│   └── Puzzle 1-3  (Vigenère cipher)
+├── Group 2: Text Encoding
+│   ├── Puzzle 2-1  (binary / ASCII)
+│   ├── Puzzle 2-2  (hex encoding)
+│   └── Puzzle 2-3  (Base64)
+├── Group 3: Hidden in Plain Sight
+│   ├── Puzzle 3-1  (acrostics)
+│   ├── Puzzle 3-2  (null ciphers)
+│   └── Puzzle 3-3  (first-letter codes)
+├── Group 4: Whitespace & Invisible Characters
+│   ├── Puzzle 4-1  (zero-width character hiding)
+│   ├── Puzzle 4-2  (whitespace Morse code)
+│   └── Puzzle 4-3  (Unicode homoglyphs)
+├── Group 5: Image Steganography
+│   ├── Puzzle 5-1  (LSB pixel hiding)
+│   ├── Puzzle 5-2  (color channel extraction)
+│   └── Puzzle 5-3  (alpha channel secrets)
+├── Group 6: Audio Steganography
+│   ├── Puzzle 6-1  (spectrogram messages)
+│   ├── Puzzle 6-2  (LSB audio encoding)
+│   └── Puzzle 6-3  (Morse code in tone)
+├── Group 7: Dead Drops & Open Web
+│   ├── Puzzle 7-1  (word-pattern hiding in social posts)
+│   ├── Puzzle 7-2  (book cipher with public article as key)
+│   └── Puzzle 7-3  (messages hidden in public commit histories)
+└── Final Puzzle  (image LSB → Base64 → book cipher, multi-concept)
 ```
 
-Specific cipher types and group count are tracked in design tickets.
+Full catalog and rationale: [docs/puzzle-catalog.md](docs/puzzle-catalog.md)
 
 ## Seed System
 
