@@ -1,0 +1,28 @@
+schema_version: "1.0"
+id: "1-1"
+group_id: 1
+type: conversation
+title: "Caesar Cipher"
+flavor: "Alice and Bob have been passing notes. Something seems off about their writing."
+
+# RNG call order is fixed — never reorder after first publish.
+params:
+  shift:    !rng rand_int(1, 25)
+  location: !rng meeting_location()
+
+content:
+  exchanges:
+    - speaker: Alice
+      text: !gen caesar_encode(location, shift)
+    - speaker: Bob
+      text: "Understood. I'll be there."
+    - speaker: Alice
+      text: !gen caesar_encode("CONFIRMED DO NOT BE LATE", shift)
+  question: "Where will Alice and Bob meet?"
+
+answer: !gen identity(location)
+
+hints:
+  - "Every letter has been shifted the same number of positions forward in the alphabet."
+  - "The letter E is the most common in English — find the most frequent letter in the ciphertext."
+  - "The shift is a whole number between 1 and 25. Try a few values systematically."

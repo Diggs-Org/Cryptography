@@ -1,0 +1,65 @@
+# JSON Schema (YAML syntax) for puzzle definition files.
+# Validate with: python3 scripts/validate-definitions.py
+$schema: "http://json-schema.org/draft-07/schema#"
+title: PuzzleDefinition
+type: object
+required:
+  - schema_version
+  - id
+  - group_id
+  - type
+  - title
+  - flavor
+  - params
+  - content
+  - answer
+  - hints
+
+properties:
+  schema_version:
+    type: string
+    pattern: "^\\d+\\.\\d+$"
+    description: "Semver major.minor. Breaking changes bump major."
+
+  id:
+    type: string
+    pattern: "^\\d+-\\d+$"
+    description: "Puzzle ID in group-index format, e.g. '1-1'."
+
+  group_id:
+    type: integer
+    minimum: 1
+
+  type:
+    type: string
+    description: "Selects templates/puzzle-types/<type>.html and the PuzzleTypeGenerator."
+
+  title:
+    type: string
+    minLength: 1
+
+  flavor:
+    type: string
+    minLength: 1
+    description: "Short scene-setting sentence shown below the title."
+
+  params:
+    type: object
+    description: >
+      Key-value pairs where values may be static (strings, lists, numbers) or
+      tagged generator calls (!rng / !gen). !rng calls are resolved in document
+      order using the seeded RNG — that order must never change after first publish.
+
+  content:
+    type: object
+    description: "Puzzle body. Shape depends on `type` — validated by PuzzleTypeGenerator."
+
+  answer:
+    description: "The correct answer. May be a static value or a !gen call."
+
+  hints:
+    type: array
+    items:
+      type: string
+    minItems: 1
+    description: "Progressive hints revealed after failed attempts."

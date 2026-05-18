@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>{{ puzzle.title }} — Cryptography Puzzles</title>
+  <link rel="stylesheet" href="/static/base.css" />
+  {% block extra_style %}{% endblock %}
+</head>
+<body data-puzzle-id="{{ puzzle.id }}">
+  <header>
+    <a href="/">← All Puzzles</a>
+    <span class="seed-display">seed: <span>{{ seed }}</span></span>
+  </header>
+
+  <main>
+    <div class="puzzle-meta">
+      <div class="puzzle-id">{{ puzzle.id }}</div>
+      <h1 class="puzzle-title">{{ puzzle.title }}</h1>
+      <p class="flavor">{{ puzzle.flavor }}</p>
+    </div>
+
+    <div class="puzzle-body">
+      {% block puzzle_body %}{% endblock %}
+    </div>
+
+    <form class="answer-form" id="answer-form" autocomplete="off">
+      <label for="answer-input">Your answer</label>
+      <input type="text" id="answer-input" name="answer" placeholder="Type your answer…" />
+      <input type="hidden" name="token" value="{{ answer_token }}" />
+      <button type="submit">Check Answer</button>
+    </form>
+
+    <div class="feedback" id="feedback"></div>
+
+    <div class="hints">
+      <button class="hint-toggle" id="hint-toggle">Show hints</button>
+      <ul class="hint-list" id="hint-list">
+        {% for hint in puzzle.hints %}
+        <li class="locked" data-index="{{ loop.index0 }}">{{ hint }}</li>
+        {% endfor %}
+      </ul>
+    </div>
+
+    <div class="share">
+      Share this exact puzzle:
+      <a id="share-link" href="#">{{ request_url }}</a>
+    </div>
+  </main>
+
+  <script src="/static/base.js"></script>
+  {% block extra_script %}{% endblock %}
+</body>
+</html>
