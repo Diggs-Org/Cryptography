@@ -20,10 +20,13 @@ When asked to "work a ticket":
    - PostToolUse hooks auto-run: Jira → **In Progress**, comment + remote link posted to Jira issue
 4. **Submit a brief plan** — post a comment on the Jira ticket summarizing the implementation approach. Wait for approval from another team member before proceeding.
 5. **Implement changes**, committing as you go
-6. **Push commits** before creating the PR:
+6. **Verify everything is committed and pushed** before creating the PR:
    ```bash
+   git status          # must show "nothing to commit, working tree clean"
    git push origin <branch>
+   git status          # must show "Your branch is up to date with 'origin/<branch>'"
    ```
+   Do not proceed to step 7 if there are uncommitted changes or unpushed commits.
 7. **Create PR** via `mcp__github__create_pull_request` using the structure from `.github/pull_request_template.md` as the PR body
    - PostToolUse hooks auto-run: Jira → **In Review**, coverage report posted as PR comment
 8. **Read the PR** via `mcp__github__pull_request_read` when addressing review comments
