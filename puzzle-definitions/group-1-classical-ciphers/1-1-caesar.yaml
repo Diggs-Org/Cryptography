@@ -1,0 +1,34 @@
+schema_version: "1.0"
+id: "1-1"
+group_id: 1
+type: conversation
+title: "Caesar Cipher"
+flavor: "Alice and Bob have been passing notes. Something seems off about their writing."
+
+# RNG call order is fixed — never reorder after first publish.
+params:
+  shift:     !rng rand_int(1, 25)
+  plaintext: !rng rand_choice(wordlist)
+  wordlist:
+    - "MEET AT THE PARK AT NOON"
+    - "THE PACKAGE IS UNDER THE BRIDGE"
+    - "RENDEZVOUS BEHIND THE OLD MILL"
+    - "WAIT BY THE FOUNTAIN AT DAWN"
+    - "THE SIGNAL IS THREE KNOCKS"
+
+content:
+  exchanges:
+    - speaker: Alice
+      text: !gen caesar_encode(plaintext, shift)
+    - speaker: Bob
+      text: "Understood. Same key as last time?"
+    - speaker: Alice
+      text: !gen caesar_encode("YES CONFIRMED", shift)
+  question: "Decode Alice's first message. What does it say?"
+
+answer: !gen identity(plaintext)
+
+hints:
+  - "Every letter has been shifted the same number of positions forward in the alphabet."
+  - "The letter E is the most common in English — find the most frequent letter in the ciphertext."
+  - "The shift is a whole number between 1 and 25. Try a few values systematically."

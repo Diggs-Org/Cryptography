@@ -1,0 +1,57 @@
+{% extends "base.html" %}
+
+{% block extra_style %}
+.exchange-log {
+  border: 1px solid #2a2a2a;
+  padding: 1rem;
+  margin-bottom: 1.5rem;
+  background: #111;
+}
+
+.exchange {
+  display: flex;
+  gap: 0.75rem;
+  margin-bottom: 0.75rem;
+  align-items: flex-start;
+}
+.exchange:last-child { margin-bottom: 0; }
+
+.speaker {
+  min-width: 80px;
+  font-size: 0.75rem;
+  font-weight: bold;
+  color: #7ec8a4;
+  padding-top: 0.15rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.message {
+  font-size: 0.95rem;
+  color: #ccc;
+  line-height: 1.5;
+  word-break: break-word;
+}
+
+.question {
+  margin-top: 1.25rem;
+  padding: 0.75rem 1rem;
+  border-left: 3px solid #7ec8a4;
+  color: #e0e0e0;
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+{% endblock %}
+
+{% block puzzle_body %}
+<div class="exchange-log">
+  {% for ex in content.exchanges %}
+  <div class="exchange">
+    <span class="speaker">{{ ex.speaker }}</span>
+    <span class="message">{{ ex.text }}</span>
+  </div>
+  {% endfor %}
+</div>
+
+<div class="question">{{ content.question }}</div>
+{% endblock %}
