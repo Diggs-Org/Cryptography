@@ -4,112 +4,10 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>{{ puzzle.title }} — Cryptography Puzzles</title>
-  <style>
-    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-
-    body {
-      font-family: 'Courier New', Courier, monospace;
-      background: #0d0d0d;
-      color: #e0e0e0;
-      min-height: 100vh;
-      display: flex;
-      flex-direction: column;
-    }
-
-    header {
-      padding: 1rem 2rem;
-      border-bottom: 1px solid #2a2a2a;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-    }
-
-    header a { color: #7ec8a4; text-decoration: none; font-size: 0.85rem; }
-    header a:hover { text-decoration: underline; }
-
-    .seed-display {
-      font-size: 0.75rem;
-      color: #555;
-    }
-    .seed-display span { color: #7ec8a4; }
-
-    main {
-      flex: 1;
-      max-width: 720px;
-      width: 100%;
-      margin: 2rem auto;
-      padding: 0 1.5rem;
-    }
-
-    .puzzle-meta { margin-bottom: 2rem; }
-    .puzzle-id   { font-size: 0.75rem; color: #555; margin-bottom: 0.25rem; }
-    .puzzle-title { font-size: 1.5rem; color: #fff; margin-bottom: 0.5rem; }
-    .flavor      { color: #999; font-size: 0.9rem; line-height: 1.5; }
-
-    .puzzle-body { margin-bottom: 2rem; }
-
-    {% block extra_style %}{% endblock %}
-
-    /* Hints */
-    .hints { margin-top: 2rem; }
-    .hint-toggle {
-      background: none;
-      border: 1px solid #333;
-      color: #7ec8a4;
-      padding: 0.4rem 0.8rem;
-      cursor: pointer;
-      font-family: inherit;
-      font-size: 0.85rem;
-    }
-    .hint-toggle:hover { border-color: #7ec8a4; }
-    .hint-list { list-style: none; margin-top: 0.75rem; display: none; }
-    .hint-list.visible { display: block; }
-    .hint-list li {
-      padding: 0.5rem 0.75rem;
-      border-left: 2px solid #333;
-      color: #aaa;
-      font-size: 0.85rem;
-      margin-bottom: 0.5rem;
-    }
-    .hint-list li.locked { color: #444; cursor: not-allowed; }
-
-    /* Answer form */
-    .answer-form { margin-top: 2rem; }
-    .answer-form label { display: block; font-size: 0.8rem; color: #777; margin-bottom: 0.4rem; }
-    .answer-form input[type="text"] {
-      width: 100%;
-      background: #1a1a1a;
-      border: 1px solid #333;
-      color: #e0e0e0;
-      padding: 0.6rem 0.8rem;
-      font-family: inherit;
-      font-size: 1rem;
-    }
-    .answer-form input[type="text"]:focus { outline: none; border-color: #7ec8a4; }
-    .answer-form button {
-      margin-top: 0.75rem;
-      background: #7ec8a4;
-      color: #0d0d0d;
-      border: none;
-      padding: 0.6rem 1.4rem;
-      font-family: inherit;
-      font-size: 0.9rem;
-      font-weight: bold;
-      cursor: pointer;
-    }
-    .answer-form button:hover { background: #a0d8bc; }
-
-    /* Feedback */
-    .feedback { margin-top: 1rem; font-size: 0.9rem; min-height: 1.2rem; }
-    .feedback.correct { color: #7ec8a4; }
-    .feedback.incorrect { color: #e07c7c; }
-
-    /* Share */
-    .share { margin-top: 2rem; font-size: 0.8rem; color: #555; }
-    .share a { color: #7ec8a4; }
-  </style>
+  <link rel="stylesheet" href="/static/base.css" />
+  {% block extra_style %}{% endblock %}
 </head>
-<body>
+<body data-puzzle-id="{{ puzzle.id }}">
   <header>
     <a href="/">← All Puzzles</a>
     <span class="seed-display">seed: <span>{{ seed }}</span></span>
@@ -150,53 +48,7 @@
     </div>
   </main>
 
-  <script>
-    (function () {
-      const ATTEMPTS_BEFORE_HINT = 3;
-      let attempts = 0;
-      let hintsUnlocked = 0;
-
-      const form     = document.getElementById('answer-form');
-      const input    = document.getElementById('answer-input');
-      const feedback = document.getElementById('feedback');
-      const hintList = document.getElementById('hint-list');
-      const hintItems = Array.from(hintList.querySelectorAll('li'));
-      const hintToggle = document.getElementById('hint-toggle');
-
-      document.getElementById('share-link').href = window.location.href;
-
-      hintToggle.addEventListener('click', () => {
-        hintList.classList.toggle('visible');
-      });
-
-      form.addEventListener('submit', async (e) => {
-        e.preventDefault();
-        const guess = input.value.trim();
-        if (!guess) return;
-
-        const res = await fetch('/puzzle/{{ puzzle.id }}/check', {
-          method: 'POST',
-          headers: { 'Content-Type': 'application/json' },
-          body: JSON.stringify({ answer: guess, token: form.token.value }),
-        });
-        const data = await res.json();
-
-        attempts++;
-        if (data.correct) {
-          feedback.textContent = '✓ Correct!';
-          feedback.className = 'feedback correct';
-          form.querySelector('button').disabled = true;
-        } else {
-          feedback.textContent = '✗ Not quite. Try again.';
-          feedback.className = 'feedback incorrect';
-          if (attempts % ATTEMPTS_BEFORE_HINT === 0 && hintsUnlocked < hintItems.length) {
-            hintItems[hintsUnlocked].classList.remove('locked');
-            hintsUnlocked++;
-            hintList.classList.add('visible');
-          }
-        }
-      });
-    }());
-  </script>
+  <script src="/static/base.js"></script>
+  {% block extra_script %}{% endblock %}
 </body>
 </html>

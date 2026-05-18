@@ -7,26 +7,20 @@ flavor: "Alice and Bob have been passing notes. Something seems off about their 
 
 # RNG call order is fixed — never reorder after first publish.
 params:
-  shift:     !rng rand_int(1, 25)
-  plaintext: !rng rand_choice(wordlist)
-  wordlist:
-    - "MEET AT THE PARK AT NOON"
-    - "THE PACKAGE IS UNDER THE BRIDGE"
-    - "RENDEZVOUS BEHIND THE OLD MILL"
-    - "WAIT BY THE FOUNTAIN AT DAWN"
-    - "THE SIGNAL IS THREE KNOCKS"
+  shift:    !rng rand_int(1, 25)
+  location: !rng meeting_location()
 
 content:
   exchanges:
     - speaker: Alice
-      text: !gen caesar_encode(plaintext, shift)
+      text: !gen caesar_encode(location, shift)
     - speaker: Bob
-      text: "Understood. Same key as last time?"
+      text: "Understood. I'll be there."
     - speaker: Alice
-      text: !gen caesar_encode("YES CONFIRMED", shift)
-  question: "Decode Alice's first message. What does it say?"
+      text: !gen caesar_encode("CONFIRMED DO NOT BE LATE", shift)
+  question: "Where will Alice and Bob meet?"
 
-answer: !gen identity(plaintext)
+answer: !gen identity(location)
 
 hints:
   - "Every letter has been shifted the same number of positions forward in the alphabet."

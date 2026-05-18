@@ -39,6 +39,24 @@ def all_names() -> list[str]:
 # RNG generators  (!rng — consume from the seeded RNG)
 # ---------------------------------------------------------------------------
 
+_MEETING_LOCATIONS = [
+    "THE PARK AT NOON",
+    "UNDER THE OLD BRIDGE",
+    "BEHIND THE MILL AT DAWN",
+    "THE NORTH DOCKS AT MIDNIGHT",
+    "BESIDE THE CLOCK TOWER",
+    "THE EAST GATE AT DUSK",
+    "THE LIBRARY STEPS AT THREE",
+    "THE HARBOUR AT LOW TIDE",
+]
+
+
+@register("meeting_location")
+def meeting_location(rng) -> str:
+    """Return a random meeting location string."""
+    return _MEETING_LOCATIONS[int(rng() * len(_MEETING_LOCATIONS))]
+
+
 @register("rand_int")
 def rand_int(rng, low: int, high: int) -> int:
     """Return a random integer in [low, high] inclusive."""
