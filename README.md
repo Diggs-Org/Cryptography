@@ -13,8 +13,10 @@ Puzzles are organized into **concept groups** — each group introduces one idea
 | Layer | Technology |
 |---|---|
 | Puzzle generation & seeding | Python |
-| Web frontend | Node / browser JS |
-| Hosting | Static (no server required for play) |
+| Web frontend | Vanilla JS + Vite |
+| State management | ES module + `localStorage` |
+| Dev server | Vite HMR (`npm run dev`) |
+| Production serving | Python `http.server` (`npm run serve`) |
 
 ## Puzzle Structure
 
@@ -57,13 +59,30 @@ The same seed always produces the same puzzle. A new seed produces a structurall
 Python scripts (build time)
   └─ generate puzzle manifests (JSON) from seed templates
 
+Vite (build time)
+  └─ bundle JS + assets → dist/
+
+Python http.server (runtime / self-hosted)
+  └─ serve dist/ on localhost:8000
+
 Browser (runtime)
   ├─ reads seed from URL
   ├─ seeds a JS PRNG with it
   └─ renders puzzle from manifest + seeded values
 ```
 
-No backend is required at runtime — puzzle generation happens at build time or entirely client-side.
+The frontend is built with Vite into a static `dist/` directory. For local play or
+self-hosted deployments, `scripts/serve.py` serves that directory via Python's built-in
+HTTP server. No application server or database is required.
+
+## Development Workflow
+
+```bash
+npm run dev        # Vite dev server with HMR (http://localhost:5173)
+npm run build      # Compile to dist/
+npm run serve      # Build + serve dist/ via Python (http://localhost:8000)
+python scripts/serve.py 9000  # Serve on a custom port
+```
 
 ## Development Roadmap
 
