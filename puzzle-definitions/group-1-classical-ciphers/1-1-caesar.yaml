@@ -7,7 +7,7 @@ flavor: "You found an unlocked phone. Two contacts have been texting about someo
 
 # RNG call order is fixed — never reorder after first publish.
 params:
-  shift:     !rng rand_int(1, 5)
+  shift:     !rng rand_int(1, 25)
   names:
     - "SARAH"
     - "JAMES"
@@ -44,7 +44,7 @@ content:
     - speaker: Alex
       text: "...why do you always do this 😭"
     - speaker: Sam
-      text: "habit. you know the key"
+      text: !gen key_reminder(shift)
     - speaker: Alex
       text: "ugh fine"
   question: "Who did Sam make contact with?"

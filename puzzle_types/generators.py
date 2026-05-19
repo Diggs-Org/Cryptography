@@ -95,3 +95,9 @@ def caesar_encode(text: str, shift: int) -> str:
 def caesar_decode(text: str, shift: int) -> str:
     """Shift every alphabetic character backward by `shift` positions."""
     return caesar_encode(text, 26 - shift)
+
+
+@register("key_reminder")
+def key_reminder(shift: int) -> str:
+    """Embed the shift value in a natural-sounding in-message hint."""
+    return f"same {shift} as always"
