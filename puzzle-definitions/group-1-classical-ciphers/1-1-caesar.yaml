@@ -20,26 +20,34 @@ params:
     - "CLAIRE"
     - "RYAN"
   questions:
-    - "wait what's her name again"
-    - "what was the name you mentioned"
-    - "who are we supposed to meet"
-    - "you never told me their name"
-    - "ok but what's the contact's name"
-    - "remind me who we're talking about"
-    - "what did she say her name was"
-    - "who is it"
+    - "who was it though"
+    - "what was their name"
+    - "so who'd you reach out to"
+    - "wait, who is it"
+    - "and the name?"
+    - "who are we dealing with"
+    - "what's the name"
+    - "who exactly"
   name:      !rng rand_choice(names)
   question:  !rng rand_choice(questions)
 
 content:
   exchanges:
     - speaker: Alex
+      text: "did you ever sort that out"
+    - speaker: Sam
+      text: "yeah, made contact yesterday"
+    - speaker: Alex
       text: !gen identity(question)
     - speaker: Sam
       text: !gen caesar_encode(name, shift)
     - speaker: Alex
-      text: "got it, thx"
-  question: "What name did Sam encode in their reply?"
+      text: "...why do you always do this 😭"
+    - speaker: Sam
+      text: "habit. you know the key"
+    - speaker: Alex
+      text: "ugh fine"
+  question: "Who did Sam make contact with?"
 
 answer: !gen identity(name)
 
