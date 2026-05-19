@@ -3,26 +3,52 @@ id: "1-1"
 group_id: 1
 type: conversation
 title: "Caesar Cipher"
-flavor: "Alice and Bob have been passing notes. Something seems off about their writing."
+flavor: "You found an unlocked phone. Two contacts have been texting about someone — but one reply is unreadable."
 
 # RNG call order is fixed — never reorder after first publish.
 params:
-  shift:    !rng rand_int(1, 25)
-  location: !rng meeting_location()
+  shift:     !rng rand_int(1, 25)
+  names:
+    - "SARAH"
+    - "JAMES"
+    - "EMILY"
+    - "OLIVER"
+    - "SOPHIE"
+    - "MARCUS"
+    - "DIANA"
+    - "JORDAN"
+    - "CLAIRE"
+    - "RYAN"
+  questions:
+    - "who was it though"
+    - "what was their name"
+    - "so who'd you reach out to"
+    - "wait, who is it"
+    - "and the name?"
+    - "who are we dealing with"
+    - "what's the name"
+    - "who exactly"
+  name:      !rng rand_choice(names)
+  question:  !rng rand_choice(questions)
 
 content:
   exchanges:
-    - speaker: Alice
-      text: !gen caesar_encode(location, shift)
-    - speaker: Bob
-      text: "Understood. I'll be there."
-    - speaker: Alice
-      text: !gen caesar_encode("CONFIRMED DO NOT BE LATE", shift)
-  question: "Where will Alice and Bob meet?"
+    - speaker: Alex
+      text: "did you ever sort that out"
+    - speaker: Sam
+      text: "yeah, made contact yesterday"
+    - speaker: Alex
+      text: !gen identity(question)
+    - speaker: Sam
+      text: !gen caesar_encode(name, shift)
+    - speaker: Alex
+      text: "...why do you always do this 😭"
+    - speaker: Sam
+      text: !gen key_reminder(shift)
+    - speaker: Alex
+      text: "ugh fine"
+  question: "Who did Sam make contact with?"
 
-answer: !gen identity(location)
+answer: !gen identity(name)
 
-hints:
-  - "Every letter has been shifted the same number of positions forward in the alphabet."
-  - "The letter E is the most common in English — find the most frequent letter in the ciphertext."
-  - "The shift is a whole number between 1 and 25. Try a few values systematically."
+hints: []

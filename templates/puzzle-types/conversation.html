@@ -1,56 +1,177 @@
 {% extends "base.html" %}
 
 {% block extra_style %}
-.exchange-log {
+<style>
+.flavor { display: none; }
+
+.phone-frame {
+  max-width: 360px;
+  margin: 0 auto 1.5rem;
   border: 1px solid #2a2a2a;
-  padding: 1rem;
-  margin-bottom: 1.5rem;
+  border-radius: 24px;
+  overflow: hidden;
+  background: #0a0a0a;
+  box-shadow: 0 12px 40px rgba(0,0,0,0.7);
+}
+
+.phone-status {
   background: #111;
-}
-
-.exchange {
+  padding: 0.4rem 1.1rem;
   display: flex;
-  gap: 0.75rem;
-  margin-bottom: 0.75rem;
-  align-items: flex-start;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 0.65rem;
+  color: #777;
 }
-.exchange:last-child { margin-bottom: 0; }
 
-.speaker {
-  min-width: 80px;
-  font-size: 0.75rem;
-  font-weight: bold;
-  color: #7ec8a4;
-  padding-top: 0.15rem;
+.phone-status-icons {
+  display: flex;
+  gap: 0.4rem;
+  align-items: center;
+}
+
+.phone-contact {
+  background: #111;
+  padding: 0.55rem 1rem 0.7rem;
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  border-bottom: 1px solid #1a1a1a;
+}
+
+.contact-avatar {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background: #2d2d2d;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.85rem;
+  color: #bbb;
   text-transform: uppercase;
-  letter-spacing: 0.05em;
+  flex-shrink: 0;
 }
 
-.message {
-  font-size: 0.95rem;
-  color: #ccc;
-  line-height: 1.5;
+.contact-info { line-height: 1.2; }
+.contact-name { font-size: 0.9rem; color: #e8e8e8; font-weight: bold; }
+.contact-status { font-size: 0.62rem; color: #555; margin-top: 0.1rem; }
+
+.sms-thread {
+  padding: 0.75rem 0.75rem 0.25rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+  min-height: 200px;
+}
+
+.sms-date {
+  text-align: center;
+  font-size: 0.6rem;
+  color: #444;
+  margin: 0.1rem 0 0.5rem;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+}
+
+.sms-row {
+  display: flex;
+  align-items: flex-end;
+  gap: 0.35rem;
+}
+
+.sms-row.sent { flex-direction: row-reverse; }
+
+.sms-avatar {
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  background: #2d2d2d;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.52rem;
+  color: #888;
+  flex-shrink: 0;
+  text-transform: uppercase;
+}
+
+.sms-row.sent .sms-avatar { visibility: hidden; }
+
+.sms-bubble {
+  max-width: 74%;
+  padding: 0.45rem 0.8rem;
+  font-size: 0.88rem;
+  line-height: 1.45;
   word-break: break-word;
 }
 
+.sms-row.received .sms-bubble {
+  background: #1e1e1e;
+  color: #e8e8e8;
+  border-radius: 16px 16px 16px 4px;
+}
+
+.sms-row.sent .sms-bubble {
+  background: #0a84ff;
+  color: #fff;
+  border-radius: 16px 16px 4px 16px;
+}
+
+.sms-delivery {
+  font-size: 0.58rem;
+  color: #444;
+  text-align: right;
+  padding: 0.15rem 0.6rem 0.6rem;
+}
+
 .question {
-  margin-top: 1.25rem;
+  margin-top: 1.5rem;
   padding: 0.75rem 1rem;
   border-left: 3px solid #7ec8a4;
   color: #e0e0e0;
   font-size: 0.95rem;
   line-height: 1.5;
 }
+</style>
 {% endblock %}
 
 {% block puzzle_body %}
-<div class="exchange-log">
-  {% for ex in content.exchanges %}
-  <div class="exchange">
-    <span class="speaker">{{ ex.speaker }}</span>
-    <span class="message">{{ ex.text }}</span>
+{% set first_speaker = content.exchanges[0].speaker %}
+{% set second_speaker = content.exchanges[1].speaker %}
+<div class="phone-frame">
+  <div class="phone-status">
+    <span>9:41 AM</span>
+    <div class="phone-status-icons">
+      <span>●●●</span>
+      <span>WiFi</span>
+      <span>▮▮▮</span>
+    </div>
   </div>
-  {% endfor %}
+  <div class="phone-contact">
+    <div class="contact-avatar">{{ first_speaker[0] }}</div>
+    <div class="contact-info">
+      <div class="contact-name">{{ first_speaker }}</div>
+      <div class="contact-status">mobile</div>
+    </div>
+  </div>
+  <div class="sms-thread">
+    <div class="sms-date">Yesterday</div>
+    {% for ex in content.exchanges %}
+    {% if ex.speaker == first_speaker %}
+    <div class="sms-row received">
+      <div class="sms-avatar">{{ ex.speaker[0] }}</div>
+      <div class="sms-bubble">{{ ex.text }}</div>
+    </div>
+    {% else %}
+    <div class="sms-row sent">
+      <div class="sms-avatar"></div>
+      <div class="sms-bubble">{{ ex.text }}</div>
+    </div>
+    {% endif %}
+    {% endfor %}
+    <div class="sms-delivery">Delivered</div>
+  </div>
 </div>
 
 <div class="question">{{ content.question }}</div>
