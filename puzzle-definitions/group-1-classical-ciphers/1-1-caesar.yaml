@@ -7,7 +7,7 @@ flavor: "You found an unlocked phone. Two contacts have been texting about someo
 
 # RNG call order is fixed — never reorder after first publish.
 params:
-  shift:     !rng rand_int(1, 25)
+  shift:     !rng rand_int(1, 5)
   names:
     - "SARAH"
     - "JAMES"
@@ -51,7 +51,4 @@ content:
 
 answer: !gen identity(name)
 
-hints:
-  - "Every letter has been shifted the same number of positions forward in the alphabet."
-  - "The letter E is the most common in English — find the most frequent letter in the ciphertext."
-  - "The shift is a whole number between 1 and 25. Try a few values systematically."
+hints: []
