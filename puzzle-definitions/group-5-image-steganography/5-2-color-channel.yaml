@@ -1,0 +1,34 @@
+schema_version: "1.0"
+id: "5-2"
+group_id: 5
+type: conversation
+title: "Color Channel Extraction"
+flavor: "The same photo. A different channel. She left more than one layer."
+
+params: {}
+
+content:
+  exchanges:
+    - speaker: Vance
+      text: "you found the first message. there's another one."
+    - speaker: Kay
+      text: "in the same image?"
+    - speaker: Vance
+      text: "different channel. red gave you the first. try green."
+    - speaker: Vance
+      text: "**CIPHER**"
+    - speaker: Kay
+      text: "same method? LSB of the green channel?"
+    - speaker: Vance
+      text: "yes. she was thorough."
+    - speaker: Kay
+      text: "what did she want someone to know"
+    - speaker: Vance
+      text: "she didn't know you specifically. she knew someone would come looking eventually."
+    - speaker: Kay
+      text: "and you made sure it was me."
+  question: "What is hidden in the green channel of the image?"
+
+answer: "TBD"
+
+hints: []

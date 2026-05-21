@@ -1,0 +1,32 @@
+schema_version: "1.0"
+id: "3-4"
+group_id: 3
+type: conversation
+title: "Every Fifth Word"
+flavor: "A passage too long to be from Vance. There's a rhythm to it."
+
+params: {}
+
+content:
+  exchanges:
+    - speaker: Vance
+      text: "read this. it's from an old briefing document."
+    - speaker: Kay
+      text: "you never send long messages. what is this"
+    - speaker: Vance
+      text: "take every fifth word. in order."
+    - speaker: Vance
+      text: "**CIPHER**"
+    - speaker: Kay
+      text: "every fifth word... i see it."
+    - speaker: Vance
+      text: "don't write it down. remember it."
+    - speaker: Kay
+      text: "why can't i write it"
+    - speaker: Vance
+      text: "because what you carry in your head, they can't take from you. what's written is different."
+  question: "What message is hidden at every fifth word in the passage?"
+
+answer: "TBD"
+
+hints: []

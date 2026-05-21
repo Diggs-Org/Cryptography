@@ -1,0 +1,36 @@
+schema_version: "1.0"
+id: "1-4"
+group_id: 1
+type: conversation
+title: "Atbash Cipher"
+flavor: "Kay asks about the predecessor. Vance gives her a task instead."
+
+params: {}
+
+content:
+  exchanges:
+    - speaker: Kay
+      text: "you've mentioned her twice now. the predecessor."
+    - speaker: Vance
+      text: "you're not ready for that."
+    - speaker: Kay
+      text: "then give me something i can work with"
+    - speaker: Vance
+      text: "she left something behind. a dead drop. find it first."
+    - speaker: Kay
+      text: "where"
+    - speaker: Vance
+      text: "**CIPHER**"
+    - speaker: Kay
+      text: "is this backwards somehow. A for Z, that kind of thing."
+    - speaker: Vance
+      text: "mirror the alphabet. you'll see."
+    - speaker: Kay
+      text: "she left this for me?"
+    - speaker: Vance
+      text: "she left it for whoever came next."
+  question: "What is the location of the dead drop she left behind?"
+
+answer: "TBD"
+
+hints: []

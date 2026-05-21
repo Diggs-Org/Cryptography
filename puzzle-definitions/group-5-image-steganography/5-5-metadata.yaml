@@ -1,0 +1,34 @@
+schema_version: "1.0"
+id: "5-5"
+group_id: 5
+type: conversation
+title: "EXIF Metadata"
+flavor: "The file itself holds coordinates. She documented everything — even what she didn't say."
+
+params: {}
+
+content:
+  exchanges:
+    - speaker: Vance
+      text: "she documented everything. even the metadata."
+    - speaker: Kay
+      text: "the image file's metadata?"
+    - speaker: Vance
+      text: "EXIF data. check the GPS field."
+    - speaker: Vance
+      text: "**CIPHER**"
+    - speaker: Kay
+      text: "these are coordinates. where is this place"
+    - speaker: Vance
+      text: "where she made her last contact before going dark."
+    - speaker: Kay
+      text: "before what happened to her"
+    - speaker: Vance
+      text: "before someone in the program decided she knew too much."
+    - speaker: Kay
+      text: "and now i know too much."
+  question: "What location do the EXIF coordinates point to?"
+
+answer: "TBD"
+
+hints: []

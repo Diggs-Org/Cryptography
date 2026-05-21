@@ -1,0 +1,34 @@
+schema_version: "1.0"
+id: "4-1"
+group_id: 4
+type: conversation
+title: "Zero-Width Characters"
+flavor: "Vance sends what looks like a blank message. It isn't."
+
+params: {}
+
+content:
+  exchanges:
+    - speaker: Vance
+      text: "**CIPHER**"
+    - speaker: Kay
+      text: "your message is empty"
+    - speaker: Vance
+      text: "is it."
+    - speaker: Kay
+      text: "i'm looking at it. there's nothing here."
+    - speaker: Vance
+      text: "paste it into a unicode inspector. count what you can't see."
+    - speaker: Kay
+      text: "there are invisible characters in here"
+    - speaker: Vance
+      text: "zero-width. they encode a sequence. look at each one."
+    - speaker: Kay
+      text: "who taught you this"
+    - speaker: Vance
+      text: "someone who trusted the wrong person. the message will tell you more."
+  question: "What is hidden in the invisible zero-width characters?"
+
+answer: "TBD"
+
+hints: []

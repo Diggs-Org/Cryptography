@@ -1,0 +1,34 @@
+schema_version: "1.0"
+id: "5-4"
+group_id: 5
+type: conversation
+title: "Hidden QR Code"
+flavor: "A pattern in the noise. She didn't trust words alone."
+
+params: {}
+
+content:
+  exchanges:
+    - speaker: Vance
+      text: "she didn't trust written words alone. too easy to alter."
+    - speaker: Kay
+      text: "the image again?"
+    - speaker: Vance
+      text: "zoom into the upper-right corner. there's a pattern in what looks like noise."
+    - speaker: Kay
+      text: "i see it. what is it"
+    - speaker: Vance
+      text: "**CIPHER**"
+    - speaker: Kay
+      text: "this is a QR code embedded in the image data"
+    - speaker: Vance
+      text: "scan it."
+    - speaker: Kay
+      text: "it points somewhere. confirms something."
+    - speaker: Vance
+      text: "it tells you who's been watching this whole time."
+  question: "What does the hidden QR code reveal?"
+
+answer: "TBD"
+
+hints: []

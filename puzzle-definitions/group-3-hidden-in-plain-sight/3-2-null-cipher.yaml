@@ -1,0 +1,34 @@
+schema_version: "1.0"
+id: "3-2"
+group_id: 3
+type: conversation
+title: "Null Cipher"
+flavor: "A story. Too long for Vance. Something is hidden inside it."
+
+params: {}
+
+content:
+  exchanges:
+    - speaker: Vance
+      text: "let me tell you about a contact i ran years back."
+    - speaker: Kay
+      text: "is this relevant"
+    - speaker: Vance
+      text: "everything i tell you is relevant."
+    - speaker: Vance
+      text: "**CIPHER**"
+    - speaker: Kay
+      text: "that was a long message. unusual for you."
+    - speaker: Vance
+      text: "the third word of every sentence. write them down in order."
+    - speaker: Kay
+      text: "is this how you communicated before encryption existed"
+    - speaker: Vance
+      text: "this is how we communicated when every channel was monitored. the message hides in the noise."
+    - speaker: Kay
+      text: "it still works that way."
+  question: "What message is revealed by taking the third word of each sentence?"
+
+answer: "TBD"
+
+hints: []

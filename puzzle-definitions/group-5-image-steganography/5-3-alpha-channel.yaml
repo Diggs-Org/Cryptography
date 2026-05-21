@@ -1,0 +1,34 @@
+schema_version: "1.0"
+id: "5-3"
+group_id: 5
+type: conversation
+title: "Alpha Channel"
+flavor: "The transparency data. She hid something in the parts that shouldn't be visible."
+
+params: {}
+
+content:
+  exchanges:
+    - speaker: Vance
+      text: "third layer. she was patient."
+    - speaker: Kay
+      text: "you said there were two messages"
+    - speaker: Vance
+      text: "i said there were two channels. there's also the alpha."
+    - speaker: Kay
+      text: "transparency data?"
+    - speaker: Vance
+      text: "**CIPHER**"
+    - speaker: Kay
+      text: "pixels that aren't fully transparent... they form a pattern when rendered at full opacity."
+    - speaker: Vance
+      text: "render it. you'll see a name."
+    - speaker: Kay
+      text: "the name she was trying to surface?"
+    - speaker: Vance
+      text: "the name that someone in the program wanted buried."
+  question: "What name is revealed in the alpha channel?"
+
+answer: "TBD"
+
+hints: []

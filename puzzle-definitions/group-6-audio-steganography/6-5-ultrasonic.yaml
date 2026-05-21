@@ -1,0 +1,34 @@
+schema_version: "1.0"
+id: "6-5"
+group_id: 6
+type: conversation
+title: "Ultrasonic Frequency"
+flavor: "A tone at the edge of human hearing. This message isn't for most people."
+
+params: {}
+
+content:
+  exchanges:
+    - speaker: Vance
+      text: "this one needs equipment. or very good headphones."
+    - speaker: Kay
+      text: "what are we hiding in this time"
+    - speaker: Vance
+      text: "18 kHz. most adults can't hear it. software can."
+    - speaker: Vance
+      text: "**CIPHER**"
+    - speaker: Kay
+      text: "there's a signal at the edge of the audible range"
+    - speaker: Vance
+      text: "pitch-shift it down two octaves. then listen."
+    - speaker: Kay
+      text: "is this really how the program operates?"
+    - speaker: Vance
+      text: "the program uses whatever the other side won't think to check."
+    - speaker: Kay
+      text: "what does the signal say"
+  question: "What message is encoded in the high-frequency audio signal?"
+
+answer: "TBD"
+
+hints: []

@@ -1,0 +1,32 @@
+schema_version: "1.0"
+id: "4-5"
+group_id: 4
+type: conversation
+title: "Tab-Space Binary"
+flavor: "Spaces are zeros. Tabs are ones. The gaps hold everything."
+
+params: {}
+
+content:
+  exchanges:
+    - speaker: Vance
+      text: "you've learned to read the text. now read the space between the text."
+    - speaker: Kay
+      text: "the whitespace?"
+    - speaker: Vance
+      text: "tabs are ones. spaces are zeros. read the binary."
+    - speaker: Vance
+      text: "**CIPHER**"
+    - speaker: Kay
+      text: "counting the gaps between words... groups of eight"
+    - speaker: Vance
+      text: "that's your byte. convert each to ASCII."
+    - speaker: Kay
+      text: "are they monitoring us right now"
+    - speaker: Vance
+      text: "they're always monitoring something. that's why none of this can look like anything."
+  question: "What binary message is encoded in the tab-space pattern?"
+
+answer: "TBD"
+
+hints: []

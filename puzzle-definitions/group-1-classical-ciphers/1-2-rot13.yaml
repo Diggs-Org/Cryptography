@@ -1,0 +1,30 @@
+schema_version: "1.0"
+id: "1-2"
+group_id: 1
+type: conversation
+title: "ROT-13"
+flavor: "Two days later. The same burner number. Vance has a location — but it's not coming through clean."
+
+params: {}
+
+content:
+  exchanges:
+    - speaker: Vance
+      text: "you have twelve hours. there's somewhere you need to be."
+    - speaker: Kay
+      text: "where"
+    - speaker: Vance
+      text: "**CIPHER**"
+    - speaker: Kay
+      text: "garbled again. same problem as before."
+    - speaker: Vance
+      text: "thirteen steps forward for each letter. or thirteen back — same result."
+    - speaker: Kay
+      text: "your predecessor — did she know this already?"
+    - speaker: Vance
+      text: "she did. go."
+  question: "Where does Kay need to be within twelve hours?"
+
+answer: "TBD"
+
+hints: []

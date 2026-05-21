@@ -1,0 +1,34 @@
+schema_version: "1.0"
+id: "7-5"
+group_id: 7
+type: conversation
+title: "Wikipedia Edit History"
+flavor: "The last message. It was in a public place the whole time."
+
+params: {}
+
+content:
+  exchanges:
+    - speaker: Vance
+      text: "everything she left is now in your hands."
+    - speaker: Kay
+      text: "what do i do with it"
+    - speaker: Vance
+      text: "there's one more. find the article. search for exactly what i give you."
+    - speaker: Vance
+      text: "**CIPHER**"
+    - speaker: Kay
+      text: "she edited this article. three years ago."
+    - speaker: Vance
+      text: "look at what she added. and the revision comment."
+    - speaker: Kay
+      text: "there's a name in the revision comment. and coordinates in the edit."
+    - speaker: Vance
+      text: "that name is who gave the order."
+    - speaker: Kay
+      text: "and now?"
+  question: "What did the predecessor hide in the Wikipedia article's edit history?"
+
+answer: "TBD"
+
+hints: []

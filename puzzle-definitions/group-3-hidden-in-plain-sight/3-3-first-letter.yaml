@@ -1,0 +1,32 @@
+schema_version: "1.0"
+id: "3-3"
+group_id: 3
+type: conversation
+title: "First-Letter Code"
+flavor: "A shopping list. Not what it looks like."
+
+params: {}
+
+content:
+  exchanges:
+    - speaker: Vance
+      text: "i'm sending you a list of things to pick up. memorize it, don't save it."
+    - speaker: Kay
+      text: "this is a strange list. who needs all this"
+    - speaker: Vance
+      text: "not the items. the initials."
+    - speaker: Vance
+      text: "**CIPHER**"
+    - speaker: Kay
+      text: "first letter of each line... this spells something."
+    - speaker: Vance
+      text: "you're faster than she was."
+    - speaker: Kay
+      text: "what happened to her when she found out"
+    - speaker: Vance
+      text: "she decoded something she shouldn't have. focus on the message."
+  question: "What does the first-letter code spell out?"
+
+answer: "TBD"
+
+hints: []

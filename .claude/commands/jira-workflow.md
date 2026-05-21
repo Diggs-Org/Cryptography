@@ -40,7 +40,12 @@ When asked to "work a ticket":
    git push origin <branch>
    git status          # must show "Your branch is up to date with 'origin/<branch>'"
    ```
-   Do not proceed to step 7 if there are uncommitted changes or unpushed commits.
+   Do not proceed to step 6b if there are uncommitted changes or unpushed commits.
+6b. **Evaluate changes against acceptance criteria** before creating the PR:
+   - Fetch the Jira ticket via `jira_get_issue` with `fields` including `customfield_10072` (Acceptance Criteria)
+   - For each criterion listed, verify it is satisfied by the committed changes
+   - If any criterion is not met, implement the missing changes, commit, push, and re-verify from step 6
+   - Only proceed to step 7 once every acceptance criterion is satisfied
 7. **Create PR** via `mcp__github__create_pull_request` using the structure from `.github/pull_request_template.md` as the PR body
    - PostToolUse hooks auto-run: Jira → **In Review**, coverage report posted as PR comment
 8. **Read the PR** via `mcp__github__pull_request_read` when addressing review comments

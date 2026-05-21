@@ -1,0 +1,34 @@
+schema_version: "1.0"
+id: "5-1"
+group_id: 5
+type: conversation
+title: "LSB Pixel Hiding"
+flavor: "Vance sends a photo. Ordinary-looking. It isn't."
+
+params: {}
+
+content:
+  exchanges:
+    - speaker: Vance
+      text: "i'm sending you an image. nothing remarkable about it."
+    - speaker: Kay
+      text: "a park bench. why"
+    - speaker: Vance
+      text: "look at the pixels. not the image."
+    - speaker: Kay
+      text: "what am i looking for"
+    - speaker: Vance
+      text: "**CIPHER**"
+    - speaker: Kay
+      text: "least significant bits of the red channel?"
+    - speaker: Vance
+      text: "extract them. read left to right, top to bottom. eight bits per character."
+    - speaker: Kay
+      text: "she took this photo, didn't she. the predecessor."
+    - speaker: Vance
+      text: "she left it where i'd find it. i'm passing it on."
+  question: "What message is hidden in the image's least significant bits?"
+
+answer: "TBD"
+
+hints: []

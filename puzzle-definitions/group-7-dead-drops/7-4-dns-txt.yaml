@@ -1,0 +1,34 @@
+schema_version: "1.0"
+id: "7-4"
+group_id: 7
+type: conversation
+title: "DNS TXT Record"
+flavor: "A domain name. The message is in the infrastructure, not the website."
+
+params: {}
+
+content:
+  exchanges:
+    - speaker: Vance
+      text: "there's a domain. i'll give you the name."
+    - speaker: Kay
+      text: "a website?"
+    - speaker: Vance
+      text: "a DNS record. pull the TXT entries. not the site — the record."
+    - speaker: Vance
+      text: "**CIPHER**"
+    - speaker: Kay
+      text: "there's a TXT record here that isn't a standard SPF entry"
+    - speaker: Vance
+      text: "base64. you know what to do."
+    - speaker: Kay
+      text: "how long has this been sitting in a public DNS record"
+    - speaker: Vance
+      text: "seven years. no one thought to look at DNS as a dead drop."
+    - speaker: Kay
+      text: "until now."
+  question: "What is encoded in the DNS TXT record?"
+
+answer: "TBD"
+
+hints: []

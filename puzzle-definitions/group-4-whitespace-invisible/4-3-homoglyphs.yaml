@@ -1,0 +1,34 @@
+schema_version: "1.0"
+id: "4-3"
+group_id: 4
+type: conversation
+title: "Unicode Homoglyphs"
+flavor: "The message looks normal. Some of those letters aren't what they appear to be."
+
+params: {}
+
+content:
+  exchanges:
+    - speaker: Vance
+      text: "i'm sending you a name. it will look ordinary."
+    - speaker: Kay
+      text: "okay"
+    - speaker: Vance
+      text: "**CIPHER**"
+    - speaker: Kay
+      text: "that reads fine. what am i looking for"
+    - speaker: Vance
+      text: "paste it into a text comparison tool. some of those letters aren't latin."
+    - speaker: Kay
+      text: "they look identical. pixel-perfect."
+    - speaker: Vance
+      text: "cyrillic, greek — same shape, different codepoint. the substituted characters spell something. extract them."
+    - speaker: Kay
+      text: "this is deeply paranoid"
+    - speaker: Vance
+      text: "paranoid is the correct baseline."
+  question: "What message is spelled out by the non-Latin lookalike characters?"
+
+answer: "TBD"
+
+hints: []
