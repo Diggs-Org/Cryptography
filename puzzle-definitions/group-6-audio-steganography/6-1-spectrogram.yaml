@@ -3,29 +3,29 @@ id: "6-1"
 group_id: 6
 type: conversation
 title: "Spectrogram"
-flavor: "A voice message with something off about it. Don't listen — visualize."
+flavor: "A voice message with something off about it. Don't listen — look."
 
 params: {}
 
 content:
   exchanges:
     - speaker: Vance
-      text: "i'm sending a voice message. don't play it — visualize it."
+      text: "I'm sending a voice message. don't play it — visualize it."
     - speaker: Kay
       text: "visualize it how"
     - speaker: Vance
-      text: "run it through a spectrogram. the audio is a carrier. the message is in the frequencies."
+      text: "the audio is a carrier. the message is somewhere else in the file."
     - speaker: Vance
       text: "**CIPHER**"
     - speaker: Kay
-      text: "there's text visible in the frequency display"
+      text: "there's something visible when I look at the frequencies"
     - speaker: Vance
-      text: "she learned this method from someone who used shortwave. a different era."
+      text: "she learned this from someone who used shortwave. a different era."
     - speaker: Kay
       text: "who taught her"
     - speaker: Vance
       text: "the same person who taught me. and who eventually sold us both out."
-  question: "What is visible in the spectrogram of the audio file?"
+  question: "What phrase appears when the audio is visualized?"
 
 answer: "TBD"
 

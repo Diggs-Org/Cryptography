@@ -12,7 +12,7 @@ content:
     - speaker: Vance
       text: "sending you something. looks like a file. it isn't."
     - speaker: Kay
-      text: "it won't open. just a long string of letters and symbols."
+      text: "it won't open. just a long string of characters."
     - speaker: Vance
       text: "it's not meant to open."
     - speaker: Kay
@@ -20,13 +20,13 @@ content:
     - speaker: Vance
       text: "**CIPHER**"
     - speaker: Kay
-      text: "ends in equal signs. base64?"
+      text: "I've decoded worse. give me a minute."
     - speaker: Vance
-      text: "standard encoding. any decoder handles it."
+      text: "then do it."
     - speaker: Kay
-      text: "a name. someone i need to avoid?"
+      text: "a name. someone I need to avoid?"
     - speaker: Vance
-      text: "someone who will come looking. better to know the face before they arrive."
+      text: "someone who will come looking. better to know before they arrive."
   question: "Who should Kay avoid?"
 
 answer: "TBD"

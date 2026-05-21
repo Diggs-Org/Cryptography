@@ -14,18 +14,18 @@ content:
     - speaker: Kay
       text: "you never send long messages. what is this"
     - speaker: Vance
-      text: "take every fifth word. in order."
+      text: "there's a pattern in it. find it."
     - speaker: Vance
       text: "**CIPHER**"
     - speaker: Kay
-      text: "every fifth word... i see it."
+      text: "I see it."
     - speaker: Vance
       text: "don't write it down. remember it."
     - speaker: Kay
-      text: "why can't i write it"
+      text: "why can't I write it"
     - speaker: Vance
       text: "because what you carry in your head, they can't take from you. what's written is different."
-  question: "What message is hidden at every fifth word in the passage?"
+  question: "What painting does the hidden message reference?"
 
 answer: "TBD"
 

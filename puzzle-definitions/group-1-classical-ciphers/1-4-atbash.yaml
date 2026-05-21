@@ -14,7 +14,7 @@ content:
     - speaker: Vance
       text: "you're not ready for that."
     - speaker: Kay
-      text: "then give me something i can work with"
+      text: "then give me something I can work with"
     - speaker: Vance
       text: "she left something behind. a dead drop. find it first."
     - speaker: Kay
@@ -22,14 +22,14 @@ content:
     - speaker: Vance
       text: "**CIPHER**"
     - speaker: Kay
-      text: "is this backwards somehow. A for Z, that kind of thing."
+      text: "this looks backwards somehow"
     - speaker: Vance
-      text: "mirror the alphabet. you'll see."
+      text: "work it out."
     - speaker: Kay
       text: "she left this for me?"
     - speaker: Vance
       text: "she left it for whoever came next."
-  question: "What is the location of the dead drop she left behind?"
+  question: "Where is the dead drop she left behind?"
 
 answer: "TBD"
 

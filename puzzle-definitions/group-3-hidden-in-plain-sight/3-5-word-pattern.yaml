@@ -14,20 +14,20 @@ content:
     - speaker: Kay
       text: "why a weather report"
     - speaker: Vance
-      text: "because everyone ignores them. count the words — every prime position."
+      text: "because everyone ignores them. read it carefully."
     - speaker: Kay
-      text: "second, third, fifth, seventh..."
+      text: "I'm reading it. it's about weather."
     - speaker: Vance
       text: "**CIPHER**"
     - speaker: Kay
-      text: "these words together — is that a location?"
+      text: "there's something in here. a city?"
     - speaker: Vance
       text: "go there. tomorrow at noon."
     - speaker: Kay
-      text: "you hid a meeting location in a weather report"
+      text: "you hid a meeting location in a weather report."
     - speaker: Vance
-      text: "it was already there. i just pointed you at the right words."
-  question: "What location is hidden in the word pattern?"
+      text: "it was already there. I just pointed you at the right words."
+  question: "What city does the word pattern point to?"
 
 answer: "TBD"
 

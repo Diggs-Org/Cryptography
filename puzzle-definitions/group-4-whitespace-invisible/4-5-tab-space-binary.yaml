@@ -3,7 +3,7 @@ id: "4-5"
 group_id: 4
 type: conversation
 title: "Tab-Space Binary"
-flavor: "Spaces are zeros. Tabs are ones. The gaps hold everything."
+flavor: "The gaps between words hold everything."
 
 params: {}
 
@@ -14,18 +14,18 @@ content:
     - speaker: Kay
       text: "the whitespace?"
     - speaker: Vance
-      text: "tabs are ones. spaces are zeros. read the binary."
+      text: "the program monitors every common channel. the gaps are still clean."
     - speaker: Vance
       text: "**CIPHER**"
     - speaker: Kay
-      text: "counting the gaps between words... groups of eight"
+      text: "the spacing between every word is different. deliberate."
     - speaker: Vance
-      text: "that's your byte. convert each to ASCII."
+      text: "yes."
     - speaker: Kay
       text: "are they monitoring us right now"
     - speaker: Vance
       text: "they're always monitoring something. that's why none of this can look like anything."
-  question: "What binary message is encoded in the tab-space pattern?"
+  question: "What date is encoded in the spacing?"
 
 answer: "TBD"
 

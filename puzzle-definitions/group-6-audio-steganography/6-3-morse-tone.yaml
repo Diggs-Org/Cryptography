@@ -10,22 +10,22 @@ params: {}
 content:
   exchanges:
     - speaker: Vance
-      text: "the recording i sent has tones buried under the noise floor."
+      text: "the recording I sent has tones buried under the noise."
     - speaker: Kay
-      text: "i don't hear anything"
+      text: "I don't hear anything"
     - speaker: Vance
-      text: "slow it down by half. filter above 2 kHz. then listen."
+      text: "slow it down. then listen again."
     - speaker: Vance
       text: "**CIPHER**"
     - speaker: Kay
-      text: "long tones and short tones. this is morse."
+      text: "long tones and short ones. there's a pattern."
     - speaker: Vance
       text: "old methods survive because they don't need infrastructure."
     - speaker: Kay
       text: "the voice in the recording — it isn't yours."
     - speaker: Vance
       text: "no. it isn't."
-  question: "What does the Morse code hidden in the audio tones spell out?"
+  question: "Whose name is encoded in the audio tones?"
 
 answer: "TBD"
 

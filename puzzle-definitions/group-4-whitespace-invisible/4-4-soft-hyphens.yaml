@@ -3,7 +3,7 @@ id: "4-4"
 group_id: 4
 type: conversation
 title: "Invisible Characters"
-flavor: "The program has names that don't appear in any record. This one is in the gaps."
+flavor: "The program has names that don't appear in any record. One of them is hidden here."
 
 params: {}
 
@@ -20,14 +20,14 @@ content:
     - speaker: Kay
       text: "this looks blank again"
     - speaker: Vance
-      text: "select all. check the character count. look at what a unicode decoder shows you."
+      text: "select all. check what's actually there."
     - speaker: Kay
-      text: "soft hyphens. invisible in the renderer."
+      text: "there are characters here I can't see"
     - speaker: Vance
-      text: "they encode a sequence. map each to a bit. you'll find a name."
+      text: "find them. they encode a name."
     - speaker: Kay
       text: "someone who disappeared from records?"
-  question: "What name is hidden in the invisible characters?"
+  question: "Whose name was removed from the program's records?"
 
 answer: "TBD"
 

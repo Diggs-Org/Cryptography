@@ -16,18 +16,18 @@ content:
     - speaker: Vance
       text: "someone in the program is reading our traffic. this format is safer for now."
     - speaker: Kay
-      text: "this looks like a computer wrote it"
+      text: "this looks like a machine wrote it"
     - speaker: Vance
       text: "**CIPHER**"
     - speaker: Kay
-      text: "is this binary"
+      text: "I don't know how to read this"
     - speaker: Vance
-      text: "eight bits per character. look up ASCII. the pattern will hold."
+      text: "yes you do."
     - speaker: Kay
       text: "who in the program"
     - speaker: Vance
-      text: "leave it. decode the message first."
-  question: "What is the ASCII message encoded in binary?"
+      text: "decode the message first."
+  question: "Who inside the program does Vance suspect?"
 
 answer: "TBD"
 

@@ -16,18 +16,18 @@ content:
     - speaker: Vance
       text: "zoom into the upper-right corner. there's a pattern in what looks like noise."
     - speaker: Kay
-      text: "i see it. what is it"
+      text: "I see something. what is it"
     - speaker: Vance
       text: "**CIPHER**"
     - speaker: Kay
-      text: "this is a QR code embedded in the image data"
+      text: "scan it?"
     - speaker: Vance
-      text: "scan it."
+      text: "yes."
     - speaker: Kay
       text: "it points somewhere. confirms something."
     - speaker: Vance
-      text: "it tells you who's been watching this whole time."
-  question: "What does the hidden QR code reveal?"
+      text: "it tells you what building to watch."
+  question: "What building does the hidden marker identify?"
 
 answer: "TBD"
 

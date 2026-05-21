@@ -12,22 +12,22 @@ content:
     - speaker: Vance
       text: "everything she left is now in your hands."
     - speaker: Kay
-      text: "what do i do with it"
+      text: "what do I do with it"
     - speaker: Vance
-      text: "there's one more. find the article. search for exactly what i give you."
+      text: "there's one more. find the article. search for exactly what I give you."
     - speaker: Vance
       text: "**CIPHER**"
     - speaker: Kay
       text: "she edited this article. three years ago."
     - speaker: Vance
-      text: "look at what she added. and the revision comment."
+      text: "look at what she changed. and what she wrote when she changed it."
     - speaker: Kay
-      text: "there's a name in the revision comment. and coordinates in the edit."
+      text: "there's a name. and something else."
     - speaker: Vance
       text: "that name is who gave the order."
     - speaker: Kay
       text: "and now?"
-  question: "What did the predecessor hide in the Wikipedia article's edit history?"
+  question: "Who gave the order to silence the predecessor?"
 
 answer: "TBD"
 

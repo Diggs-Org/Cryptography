@@ -14,18 +14,18 @@ content:
     - speaker: Kay
       text: "is this about the predecessor again"
     - speaker: Vance
-      text: "it's about surviving long enough to matter. she knew morse. so should you."
+      text: "it's about surviving long enough to matter. she knew this one. so should you."
     - speaker: Vance
       text: "**CIPHER**"
     - speaker: Kay
-      text: "dots and dashes. international morse?"
+      text: "dots and dashes?"
     - speaker: Vance
-      text: "standard ITU. decode it."
+      text: "decode it."
     - speaker: Kay
       text: "she learned this from you?"
     - speaker: Vance
       text: "everyone in the program learned from someone. the chain goes back further than you think."
-  question: "What does the Morse code message say?"
+  question: "What code phrase does the message spell out?"
 
 answer: "TBD"
 

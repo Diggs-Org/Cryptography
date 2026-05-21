@@ -10,24 +10,24 @@ params: {}
 content:
   exchanges:
     - speaker: Vance
-      text: "you kept the first message i sent?"
+      text: "you kept the first message I sent?"
     - speaker: Kay
       text: "you said to burn it"
     - speaker: Vance
-      text: "then trust me. the key is BURN. use it."
+      text: "then trust me. the key is BURN."
     - speaker: Kay
-      text: "use it for what"
+      text: "key for what"
     - speaker: Vance
       text: "**CIPHER**"
     - speaker: Kay
-      text: "this looks different from before. same idea?"
+      text: "this looks different from before."
     - speaker: Vance
-      text: "same goal. a name. the keyword shifts each letter differently."
+      text: "same goal. there's an alias you need."
     - speaker: Kay
       text: "you planned this before we ever spoke."
     - speaker: Vance
-      text: "i plan everything before i speak."
-  question: "What name did Vance encode with the Vigenère cipher?"
+      text: "I plan everything before I speak."
+  question: "What alias did Vance encode in the cipher?"
 
 answer: "TBD"
 

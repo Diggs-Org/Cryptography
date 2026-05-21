@@ -10,7 +10,7 @@ params: {}
 content:
   exchanges:
     - speaker: Vance
-      text: "find the post i made last tuesday. public account. nature photos."
+      text: "find the post I made last tuesday. public account. nature photos."
     - speaker: Kay
       text: "you have a public account?"
     - speaker: Vance
@@ -20,14 +20,14 @@ content:
     - speaker: Vance
       text: "**CIPHER**"
     - speaker: Kay
-      text: "every third word of the caption... i see it."
+      text: "I see something in the caption. a name?"
     - speaker: Vance
       text: "anyone scanning the post sees nothing. that's the point."
     - speaker: Kay
       text: "how long has this account existed"
     - speaker: Vance
       text: "longer than you've been alive. the predecessor used it too."
-  question: "What message is hidden in every third word of the post caption?"
+  question: "Who is Vance's contact in the field?"
 
 answer: "TBD"
 

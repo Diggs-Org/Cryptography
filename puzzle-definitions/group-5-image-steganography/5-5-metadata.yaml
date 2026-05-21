@@ -10,15 +10,15 @@ params: {}
 content:
   exchanges:
     - speaker: Vance
-      text: "she documented everything. even the metadata."
+      text: "she documented everything. even what's not visible."
     - speaker: Kay
-      text: "the image file's metadata?"
+      text: "in the image file?"
     - speaker: Vance
-      text: "EXIF data. check the GPS field."
+      text: "check what the file carries. not just what it shows."
     - speaker: Vance
       text: "**CIPHER**"
     - speaker: Kay
-      text: "these are coordinates. where is this place"
+      text: "coordinates. where is this place"
     - speaker: Vance
       text: "where she made her last contact before going dark."
     - speaker: Kay
@@ -26,8 +26,8 @@ content:
     - speaker: Vance
       text: "before someone in the program decided she knew too much."
     - speaker: Kay
-      text: "and now i know too much."
-  question: "What location do the EXIF coordinates point to?"
+      text: "and now I know too much."
+  question: "What city do the coordinates identify?"
 
 answer: "TBD"
 

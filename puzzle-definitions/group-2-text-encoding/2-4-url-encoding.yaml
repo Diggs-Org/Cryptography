@@ -14,19 +14,19 @@ content:
     - speaker: Kay
       text: "then why send it"
     - speaker: Vance
-      text: "the URL is the message. read it, don't follow it."
+      text: "the link itself is the message. read it, don't follow it."
     - speaker: Kay
       text: "it's all percent signs and numbers"
     - speaker: Vance
       text: "**CIPHER**"
     - speaker: Kay
-      text: "percent-decoding it... there's a name in here"
+      text: "there's a name buried in here"
     - speaker: Vance
       text: "someone who will make contact with you. when they do, you'll know."
     - speaker: Kay
-      text: "and if i don't recognize them in time"
+      text: "and if I don't recognize them in time"
     - speaker: Vance
-      text: "you will. she taught me how to read a room. i'm teaching you."
+      text: "you will. she taught me how to read a room. I'm teaching you."
   question: "Who will make contact with Kay?"
 
 answer: "TBD"

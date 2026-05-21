@@ -14,20 +14,20 @@ content:
     - speaker: Kay
       text: "you said there were two messages"
     - speaker: Vance
-      text: "i said there were two channels. there's also the alpha."
+      text: "I said two. there's a third."
     - speaker: Kay
-      text: "transparency data?"
+      text: "in the same file?"
     - speaker: Vance
       text: "**CIPHER**"
     - speaker: Kay
-      text: "pixels that aren't fully transparent... they form a pattern when rendered at full opacity."
+      text: "the transparency data? I wouldn't have thought to look there."
     - speaker: Vance
-      text: "render it. you'll see a name."
+      text: "that's why she put it there."
     - speaker: Kay
-      text: "the name she was trying to surface?"
+      text: "a name. the name she was trying to surface?"
     - speaker: Vance
       text: "the name that someone in the program wanted buried."
-  question: "What name is revealed in the alpha channel?"
+  question: "Whose name did the predecessor hide in the alpha channel?"
 
 answer: "TBD"
 

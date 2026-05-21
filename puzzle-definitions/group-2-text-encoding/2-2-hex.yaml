@@ -18,16 +18,14 @@ content:
     - speaker: Vance
       text: "**CIPHER**"
     - speaker: Kay
-      text: "hexadecimal?"
+      text: "I've seen this format somewhere before."
     - speaker: Vance
-      text: "two characters per byte. convert to decimal, then to ASCII."
+      text: "good. then you know what to do."
     - speaker: Kay
-      text: "who still uses hex for comms"
+      text: "who still communicates this way"
     - speaker: Vance
-      text: "people who learned before encryption was easy. people who survived because of it."
-    - speaker: Kay
-      text: "people like you."
-  question: "What is the message encoded in the hex string?"
+      text: "people who survived because they did."
+  question: "What date did Vance encode in the message?"
 
 answer: "TBD"
 

@@ -10,24 +10,24 @@ params: {}
 content:
   exchanges:
     - speaker: Vance
-      text: "there's a domain. i'll give you the name."
+      text: "there's a domain. I'll give you the name."
     - speaker: Kay
       text: "a website?"
     - speaker: Vance
-      text: "a DNS record. pull the TXT entries. not the site — the record."
+      text: "not the site. look at what the domain itself carries."
     - speaker: Vance
       text: "**CIPHER**"
     - speaker: Kay
-      text: "there's a TXT record here that isn't a standard SPF entry"
+      text: "there's something here that doesn't belong. buried in the records."
     - speaker: Vance
-      text: "base64. you know what to do."
+      text: "you know what to do with it."
     - speaker: Kay
-      text: "how long has this been sitting in a public DNS record"
+      text: "how long has this been sitting in a public record"
     - speaker: Vance
-      text: "seven years. no one thought to look at DNS as a dead drop."
+      text: "seven years. no one thought to look."
     - speaker: Kay
       text: "until now."
-  question: "What is encoded in the DNS TXT record?"
+  question: "What location is encoded in the DNS record?"
 
 answer: "TBD"
 

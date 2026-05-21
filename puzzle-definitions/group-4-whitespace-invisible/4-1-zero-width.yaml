@@ -16,18 +16,18 @@ content:
     - speaker: Vance
       text: "is it."
     - speaker: Kay
-      text: "i'm looking at it. there's nothing here."
+      text: "I'm looking at it. there's nothing here."
     - speaker: Vance
-      text: "paste it into a unicode inspector. count what you can't see."
+      text: "look closer."
     - speaker: Kay
-      text: "there are invisible characters in here"
+      text: "there's something in here I can't see"
     - speaker: Vance
-      text: "zero-width. they encode a sequence. look at each one."
+      text: "who taught you to trust what renders?"
     - speaker: Kay
       text: "who taught you this"
     - speaker: Vance
       text: "someone who trusted the wrong person. the message will tell you more."
-  question: "What is hidden in the invisible zero-width characters?"
+  question: "What warning did Vance hide in the blank message?"
 
 answer: "TBD"
 

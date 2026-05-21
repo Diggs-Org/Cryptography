@@ -10,24 +10,24 @@ params: {}
 content:
   exchanges:
     - speaker: Vance
-      text: "i'm sending you an image. nothing remarkable about it."
+      text: "I'm sending you an image. nothing remarkable about it."
     - speaker: Kay
       text: "a park bench. why"
     - speaker: Vance
-      text: "look at the pixels. not the image."
+      text: "look at the image. not what's in it."
     - speaker: Kay
-      text: "what am i looking for"
+      text: "what am I looking for"
     - speaker: Vance
       text: "**CIPHER**"
     - speaker: Kay
-      text: "least significant bits of the red channel?"
+      text: "something in the pixel data?"
     - speaker: Vance
-      text: "extract them. read left to right, top to bottom. eight bits per character."
+      text: "she left it where I'd find it. I'm passing it on."
     - speaker: Kay
-      text: "she took this photo, didn't she. the predecessor."
+      text: "she took this photo."
     - speaker: Vance
-      text: "she left it where i'd find it. i'm passing it on."
-  question: "What message is hidden in the image's least significant bits?"
+      text: "yes."
+  question: "What message did the predecessor hide in the image?"
 
 answer: "TBD"
 

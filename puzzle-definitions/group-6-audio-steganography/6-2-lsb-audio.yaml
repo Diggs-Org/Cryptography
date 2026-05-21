@@ -10,7 +10,7 @@ params: {}
 content:
   exchanges:
     - speaker: Vance
-      text: "i'm going dark for a week. when i come back, there will be a recording waiting."
+      text: "I'm going dark for a week. when I come back, there will be a recording waiting."
     - speaker: Kay
       text: "what if you don't come back"
     - speaker: Vance
@@ -18,14 +18,14 @@ content:
     - speaker: Vance
       text: "**CIPHER**"
     - speaker: Kay
-      text: "the least significant bits of each audio sample?"
+      text: "there's something in this recording that isn't the recording"
     - speaker: Vance
       text: "same principle as the image. different medium."
     - speaker: Kay
       text: "you recorded this before you went dark. in case."
     - speaker: Vance
       text: "in case."
-  question: "What is hidden in the audio file's least significant bit data?"
+  question: "Where does Vance want Kay to go if he doesn't return?"
 
 answer: "TBD"
 

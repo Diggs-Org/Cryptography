@@ -14,20 +14,20 @@ content:
     - speaker: Kay
       text: "yes"
     - speaker: Vance
-      text: "find the one on blind trials. second paragraph. the coordinates tell you which words."
+      text: "find the one on blind trials. second paragraph. the numbers tell you which words."
     - speaker: Vance
       text: "**CIPHER**"
     - speaker: Kay
-      text: "paragraph, word, character — the words at those positions spell something"
+      text: "the words at those positions... they form something."
     - speaker: Vance
       text: "that's the message."
     - speaker: Kay
-      text: "anyone could decode this if they had the key"
+      text: "anyone could decode this if they had what you just gave me"
     - speaker: Vance
-      text: "and no one will have the key unless i give it to them. the article changes. the message doesn't."
+      text: "and no one will, unless I give it to them. use it once. then it's gone."
     - speaker: Kay
       text: "how many of these have you left in public documents"
-  question: "What does the book cipher decode to?"
+  question: "What code phrase does the cipher decode to?"
 
 answer: "TBD"
 

@@ -10,24 +10,24 @@ params: {}
 content:
   exchanges:
     - speaker: Vance
-      text: "there's a github repository. handle is in what i send you."
+      text: "there's a repository. I'll give you the handle."
     - speaker: Kay
       text: "you have a github account"
     - speaker: Vance
-      text: "the program does. look at commit messages from three years ago."
+      text: "the program does. look at the commit messages from three years ago."
     - speaker: Vance
       text: "**CIPHER**"
     - speaker: Kay
-      text: "first letter of every commit message... this spells a name"
+      text: "there's a pattern in the commit messages. I see something."
     - speaker: Vance
-      text: "someone who used the commit history as a dead drop for eighteen months."
+      text: "someone used this repository as a dead drop for eighteen months."
     - speaker: Kay
       text: "the predecessor?"
     - speaker: Vance
-      text: "she was thorough. the messages are still there if you know the repository."
+      text: "she was thorough. the messages are still there if you know where to look."
     - speaker: Kay
-      text: "and the name in the commits — who is that"
-  question: "What name is spelled by the first letters of the commit messages?"
+      text: "and the name — who is that"
+  question: "Who used the repository as a dead drop?"
 
 answer: "TBD"
 

@@ -10,24 +10,22 @@ params: {}
 content:
   exchanges:
     - speaker: Vance
-      text: "let me tell you about a contact i ran years back."
+      text: "let me tell you about a contact I ran years back."
     - speaker: Kay
       text: "is this relevant"
     - speaker: Vance
-      text: "everything i tell you is relevant."
+      text: "everything I tell you is relevant."
     - speaker: Vance
       text: "**CIPHER**"
     - speaker: Kay
       text: "that was a long message. unusual for you."
     - speaker: Vance
-      text: "the third word of every sentence. write them down in order."
+      text: "read it again. more carefully."
     - speaker: Kay
-      text: "is this how you communicated before encryption existed"
+      text: "is this how you communicated before things got easier"
     - speaker: Vance
-      text: "this is how we communicated when every channel was monitored. the message hides in the noise."
-    - speaker: Kay
-      text: "it still works that way."
-  question: "What message is revealed by taking the third word of each sentence?"
+      text: "the message hides in the noise. it still works that way."
+  question: "Whose name is Vance hiding in the story?"
 
 answer: "TBD"
 

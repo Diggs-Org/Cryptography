@@ -3,7 +3,7 @@ id: "5-2"
 group_id: 5
 type: conversation
 title: "Color Channel Extraction"
-flavor: "The same photo. A different channel. She left more than one layer."
+flavor: "The same photo. A different layer. She left more than one message."
 
 params: {}
 
@@ -14,20 +14,20 @@ content:
     - speaker: Kay
       text: "in the same image?"
     - speaker: Vance
-      text: "different channel. red gave you the first. try green."
+      text: "she was thorough."
+    - speaker: Kay
+      text: "what am I looking for this time"
     - speaker: Vance
       text: "**CIPHER**"
     - speaker: Kay
-      text: "same method? LSB of the green channel?"
-    - speaker: Vance
-      text: "yes. she was thorough."
-    - speaker: Kay
-      text: "what did she want someone to know"
+      text: "same image, different approach?"
     - speaker: Vance
       text: "she didn't know you specifically. she knew someone would come looking eventually."
     - speaker: Kay
       text: "and you made sure it was me."
-  question: "What is hidden in the green channel of the image?"
+    - speaker: Vance
+      text: "yes."
+  question: "Which country should Kay investigate?"
 
 answer: "TBD"
 

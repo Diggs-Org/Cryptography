@@ -10,7 +10,7 @@ params: {}
 content:
   exchanges:
     - speaker: Vance
-      text: "i'm back. reverse the audio file i sent before i went dark."
+      text: "I'm back. reverse the audio file I sent before I went dark."
     - speaker: Kay
       text: "reverse it? why"
     - speaker: Vance
@@ -18,14 +18,14 @@ content:
     - speaker: Vance
       text: "**CIPHER**"
     - speaker: Kay
-      text: "played in reverse... i can hear a name"
+      text: "I can hear a name"
     - speaker: Vance
       text: "say it back to me."
     - speaker: Kay
       text: "that's who sold you out?"
     - speaker: Vance
       text: "that's who they'll tell you to trust. don't."
-  question: "What name is revealed when the audio is played in reverse?"
+  question: "Who does Vance warn Kay not to trust?"
 
 answer: "TBD"
 
