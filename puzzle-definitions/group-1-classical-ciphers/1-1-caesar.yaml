@@ -3,11 +3,11 @@ id: "1-1"
 group_id: 1
 type: conversation
 title: "Caesar Cipher"
-flavor: "You found an unlocked phone. Two contacts have been texting about someone — but one reply is unreadable."
+flavor: "A burner phone left face-up on a park bench. A handler called VANCE is passing something to a new recruit — but one message isn't coming through."
 
 # RNG call order is fixed — never reorder after first publish.
 params:
-  shift:     !rng rand_int(1, 25)
+  shift:     !rng rand_int(1, 13)
   names:
     - "SARAH"
     - "JAMES"
@@ -20,34 +20,36 @@ params:
     - "CLAIRE"
     - "RYAN"
   questions:
-    - "who was it though"
-    - "what was their name"
-    - "so who'd you reach out to"
-    - "wait, who is it"
+    - "what's the name?"
+    - "who do i need to reach?"
     - "and the name?"
-    - "who are we dealing with"
-    - "what's the name"
-    - "who exactly"
+    - "who am i looking for?"
+    - "the contact's name?"
+    - "who exactly?"
+    - "give me a name"
+    - "who is it?"
   name:      !rng rand_choice(names)
   question:  !rng rand_choice(questions)
 
 content:
   exchanges:
-    - speaker: Alex
-      text: "did you ever sort that out"
-    - speaker: Sam
-      text: "yeah, made contact yesterday"
-    - speaker: Alex
+    - speaker: Vance
+      text: "first contact established. burn this number after."
+    - speaker: Kay
+      text: "who is this"
+    - speaker: Vance
+      text: "someone who knew your predecessor. there's a name you need to reach."
+    - speaker: Kay
       text: !gen identity(question)
-    - speaker: Sam
+    - speaker: Vance
       text: !gen caesar_encode(name, shift)
-    - speaker: Alex
-      text: "...why do you always do this 😭"
-    - speaker: Sam
+    - speaker: Kay
+      text: "my screen's glitching. this looks wrong."
+    - speaker: Vance
       text: !gen key_reminder(shift)
-    - speaker: Alex
-      text: "ugh fine"
-  question: "Who did Sam make contact with?"
+    - speaker: Kay
+      text: "nobody briefed me on anything"
+  question: "Who should Kay reach out to?"
 
 answer: !gen identity(name)
 
