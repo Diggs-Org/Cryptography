@@ -1,0 +1,34 @@
+schema_version: "1.0"
+id: "5-5"
+group_id: 5
+type: conversation
+title: "EXIF Metadata"
+flavor: "She documented everything — even what she didn't say out loud."
+
+params: {}
+
+content:
+  exchanges:
+    - speaker: Vance
+      text: "she documented everything. even what's not visible."
+    - speaker: Kay
+      text: "in the image file?"
+    - speaker: Vance
+      text: "check what the file carries. not just what it shows."
+    - speaker: Vance
+      text: "**CIPHER**"
+    - speaker: Kay
+      text: "coordinates. where is this place"
+    - speaker: Vance
+      text: "where she made her last contact before going dark."
+    - speaker: Kay
+      text: "before what happened to her"
+    - speaker: Vance
+      text: "before someone in the program decided she knew too much."
+    - speaker: Kay
+      text: "and now I know too much."
+  question: "What city do the coordinates identify?"
+
+answer: "TBD"
+
+hints: []

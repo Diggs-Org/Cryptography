@@ -1,0 +1,34 @@
+schema_version: "1.0"
+id: "4-4"
+group_id: 4
+type: conversation
+title: "Invisible Characters"
+flavor: "The program has names that don't appear in any record. One of them is hidden here."
+
+params: {}
+
+content:
+  exchanges:
+    - speaker: Vance
+      text: "there are things in the program that were never officially documented."
+    - speaker: Kay
+      text: "like what"
+    - speaker: Vance
+      text: "like certain names. the kind that disappear from official records."
+    - speaker: Vance
+      text: "**CIPHER**"
+    - speaker: Kay
+      text: "this looks blank again"
+    - speaker: Vance
+      text: "select all. check what's actually there."
+    - speaker: Kay
+      text: "there are characters here I can't see"
+    - speaker: Vance
+      text: "find them. they encode a name."
+    - speaker: Kay
+      text: "someone who disappeared from records?"
+  question: "Whose name was removed from the program's records?"
+
+answer: "TBD"
+
+hints: []

@@ -100,4 +100,4 @@ def caesar_decode(text: str, shift: int) -> str:
 @register("key_reminder")
 def key_reminder(shift: int) -> str:
     """Embed the shift value in a natural-sounding in-message hint."""
-    return f"same {shift} as always"
+    return f"shift back {shift}. you were briefed."

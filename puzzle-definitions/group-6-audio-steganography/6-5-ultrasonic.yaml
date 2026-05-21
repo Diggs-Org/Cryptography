@@ -1,0 +1,34 @@
+schema_version: "1.0"
+id: "6-5"
+group_id: 6
+type: conversation
+title: "Ultrasonic Frequency"
+flavor: "A tone at the edge of human hearing. This message isn't for most people."
+
+params: {}
+
+content:
+  exchanges:
+    - speaker: Vance
+      text: "this one needs equipment. or very good headphones."
+    - speaker: Kay
+      text: "what are we hiding in this time"
+    - speaker: Vance
+      text: "something at the edge. most people would miss it."
+    - speaker: Vance
+      text: "**CIPHER**"
+    - speaker: Kay
+      text: "there's a signal at the edge. I almost missed it."
+    - speaker: Vance
+      text: "bring it down. then listen."
+    - speaker: Kay
+      text: "is this really how the program operates?"
+    - speaker: Vance
+      text: "the program uses whatever the other side won't think to check."
+    - speaker: Kay
+      text: "what does it say"
+  question: "What date is hidden in the high-frequency signal?"
+
+answer: "TBD"
+
+hints: []

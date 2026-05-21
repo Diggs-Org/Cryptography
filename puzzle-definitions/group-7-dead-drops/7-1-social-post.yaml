@@ -1,0 +1,34 @@
+schema_version: "1.0"
+id: "7-1"
+group_id: 7
+type: conversation
+title: "Social Post Word Pattern"
+flavor: "A public post. Too ordinary to be ordinary."
+
+params: {}
+
+content:
+  exchanges:
+    - speaker: Vance
+      text: "find the post I made last tuesday. public account. nature photos."
+    - speaker: Kay
+      text: "you have a public account?"
+    - speaker: Vance
+      text: "everyone leaves a surface. the question is what you put on it."
+    - speaker: Kay
+      text: "it's just a river. the caption is about autumn."
+    - speaker: Vance
+      text: "**CIPHER**"
+    - speaker: Kay
+      text: "I see something in the caption. a name?"
+    - speaker: Vance
+      text: "anyone scanning the post sees nothing. that's the point."
+    - speaker: Kay
+      text: "how long has this account existed"
+    - speaker: Vance
+      text: "longer than you've been alive. the predecessor used it too."
+  question: "Who is Vance's contact in the field?"
+
+answer: "TBD"
+
+hints: []

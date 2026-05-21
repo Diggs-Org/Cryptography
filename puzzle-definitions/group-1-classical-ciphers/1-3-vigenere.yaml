@@ -1,0 +1,34 @@
+schema_version: "1.0"
+id: "1-3"
+group_id: 1
+type: conversation
+title: "Vigenère Cipher"
+flavor: "The method has changed. Vance is using a keyword — one he buried in an earlier message."
+
+params: {}
+
+content:
+  exchanges:
+    - speaker: Vance
+      text: "you kept the first message I sent?"
+    - speaker: Kay
+      text: "you said to burn it"
+    - speaker: Vance
+      text: "then trust me. the key is BURN."
+    - speaker: Kay
+      text: "key for what"
+    - speaker: Vance
+      text: "**CIPHER**"
+    - speaker: Kay
+      text: "this looks different from before."
+    - speaker: Vance
+      text: "same goal. there's an alias you need."
+    - speaker: Kay
+      text: "you planned this before we ever spoke."
+    - speaker: Vance
+      text: "I plan everything before I speak."
+  question: "What alias did Vance encode in the cipher?"
+
+answer: "TBD"
+
+hints: []

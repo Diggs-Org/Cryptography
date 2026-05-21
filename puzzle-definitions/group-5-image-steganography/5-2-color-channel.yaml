@@ -1,0 +1,34 @@
+schema_version: "1.0"
+id: "5-2"
+group_id: 5
+type: conversation
+title: "Color Channel Extraction"
+flavor: "The same photo. A different layer. She left more than one message."
+
+params: {}
+
+content:
+  exchanges:
+    - speaker: Vance
+      text: "you found the first message. there's another one."
+    - speaker: Kay
+      text: "in the same image?"
+    - speaker: Vance
+      text: "she was thorough."
+    - speaker: Kay
+      text: "what am I looking for this time"
+    - speaker: Vance
+      text: "**CIPHER**"
+    - speaker: Kay
+      text: "same image, different approach?"
+    - speaker: Vance
+      text: "she didn't know you specifically. she knew someone would come looking eventually."
+    - speaker: Kay
+      text: "and you made sure it was me."
+    - speaker: Vance
+      text: "yes."
+  question: "Which country should Kay investigate?"
+
+answer: "TBD"
+
+hints: []

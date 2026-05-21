@@ -1,0 +1,32 @@
+schema_version: "1.0"
+id: "4-5"
+group_id: 4
+type: conversation
+title: "Tab-Space Binary"
+flavor: "The gaps between words hold everything."
+
+params: {}
+
+content:
+  exchanges:
+    - speaker: Vance
+      text: "you've learned to read the text. now read the space between the text."
+    - speaker: Kay
+      text: "the whitespace?"
+    - speaker: Vance
+      text: "the program monitors every common channel. the gaps are still clean."
+    - speaker: Vance
+      text: "**CIPHER**"
+    - speaker: Kay
+      text: "the spacing between every word is different. deliberate."
+    - speaker: Vance
+      text: "yes."
+    - speaker: Kay
+      text: "are they monitoring us right now"
+    - speaker: Vance
+      text: "they're always monitoring something. that's why none of this can look like anything."
+  question: "What date is encoded in the spacing?"
+
+answer: "TBD"
+
+hints: []

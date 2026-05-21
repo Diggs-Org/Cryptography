@@ -1,0 +1,30 @@
+schema_version: "1.0"
+id: "3-3"
+group_id: 3
+type: conversation
+title: "First-Letter Code"
+flavor: "A list. Not what it looks like."
+
+params: {}
+
+content:
+  exchanges:
+    - speaker: Vance
+      text: "I'm sending you a list of things to pick up. memorize it, don't save it."
+    - speaker: Kay
+      text: "this is a strange list. who needs all this"
+    - speaker: Vance
+      text: "not the items. look at the structure."
+    - speaker: Vance
+      text: "**CIPHER**"
+    - speaker: Kay
+      text: "you're faster than she was."
+    - speaker: Vance
+      text: "what happened to her when she found out"
+    - speaker: Kay
+      text: "she decoded something she shouldn't have. focus on the message."
+  question: "What is the name of the target?"
+
+answer: "TBD"
+
+hints: []

@@ -1,0 +1,34 @@
+schema_version: "1.0"
+id: "5-3"
+group_id: 5
+type: conversation
+title: "Alpha Channel"
+flavor: "A third message. She hid something in the places no one would think to look."
+
+params: {}
+
+content:
+  exchanges:
+    - speaker: Vance
+      text: "third layer. she was patient."
+    - speaker: Kay
+      text: "you said there were two messages"
+    - speaker: Vance
+      text: "I said two. there's a third."
+    - speaker: Kay
+      text: "in the same file?"
+    - speaker: Vance
+      text: "**CIPHER**"
+    - speaker: Kay
+      text: "I wouldn't have thought to look there."
+    - speaker: Vance
+      text: "that's why she put it there."
+    - speaker: Kay
+      text: "a name. the name she was trying to surface?"
+    - speaker: Vance
+      text: "the name that someone in the program wanted buried."
+  question: "Whose name did the predecessor hide in the image?"
+
+answer: "TBD"
+
+hints: []

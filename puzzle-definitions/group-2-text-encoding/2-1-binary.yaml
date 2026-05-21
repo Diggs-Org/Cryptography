@@ -1,0 +1,34 @@
+schema_version: "1.0"
+id: "2-1"
+group_id: 2
+type: conversation
+title: "Binary / ASCII"
+flavor: "A new channel. The message looks like a machine wrote it."
+
+params: {}
+
+content:
+  exchanges:
+    - speaker: Vance
+      text: "switching channels. the old one is compromised."
+    - speaker: Kay
+      text: "compromised how"
+    - speaker: Vance
+      text: "someone in the program is reading our traffic. this format is safer for now."
+    - speaker: Kay
+      text: "this looks like a machine wrote it"
+    - speaker: Vance
+      text: "**CIPHER**"
+    - speaker: Kay
+      text: "I don't know how to read this"
+    - speaker: Vance
+      text: "yes you do."
+    - speaker: Kay
+      text: "who in the program"
+    - speaker: Vance
+      text: "decode the message first."
+  question: "Who inside the program does Vance suspect?"
+
+answer: "TBD"
+
+hints: []

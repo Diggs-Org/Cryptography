@@ -1,0 +1,32 @@
+schema_version: "1.0"
+id: "2-5"
+group_id: 2
+type: conversation
+title: "Morse Code"
+flavor: "Old habits. Dots and dashes — the original encoding."
+
+params: {}
+
+content:
+  exchanges:
+    - speaker: Vance
+      text: "some methods are older than computers. you should know all of them."
+    - speaker: Kay
+      text: "is this about the predecessor again"
+    - speaker: Vance
+      text: "it's about surviving long enough to matter. she knew this one. so should you."
+    - speaker: Vance
+      text: "**CIPHER**"
+    - speaker: Kay
+      text: "dots and dashes?"
+    - speaker: Vance
+      text: "decode it."
+    - speaker: Kay
+      text: "she learned this from you?"
+    - speaker: Vance
+      text: "everyone in the program learned from someone. the chain goes back further than you think."
+  question: "What code phrase does the message spell out?"
+
+answer: "TBD"
+
+hints: []

@@ -1,0 +1,30 @@
+schema_version: "1.0"
+id: "1-2"
+group_id: 1
+type: conversation
+title: "ROT-13"
+flavor: "Two days later. The same burner number. Vance has somewhere Kay needs to be."
+
+params: {}
+
+content:
+  exchanges:
+    - speaker: Vance
+      text: "you have twelve hours. there's somewhere you need to be."
+    - speaker: Kay
+      text: "where"
+    - speaker: Vance
+      text: "**CIPHER**"
+    - speaker: Kay
+      text: "I can't read this. something's off."
+    - speaker: Vance
+      text: "you were trained for this."
+    - speaker: Kay
+      text: "your predecessor — did she pick these things up fast?"
+    - speaker: Vance
+      text: "she never needed twelve hours. go."
+  question: "What city does Vance want Kay to travel to?"
+
+answer: "TBD"
+
+hints: []

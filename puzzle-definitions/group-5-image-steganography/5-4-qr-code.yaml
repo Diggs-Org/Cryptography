@@ -1,0 +1,34 @@
+schema_version: "1.0"
+id: "5-4"
+group_id: 5
+type: conversation
+title: "Hidden QR Code"
+flavor: "A pattern in the noise. She didn't trust words alone."
+
+params: {}
+
+content:
+  exchanges:
+    - speaker: Vance
+      text: "she didn't trust written words alone. too easy to alter."
+    - speaker: Kay
+      text: "the image again?"
+    - speaker: Vance
+      text: "look past the surface of it."
+    - speaker: Kay
+      text: "there's something in here. a pattern."
+    - speaker: Vance
+      text: "**CIPHER**"
+    - speaker: Kay
+      text: "what do I do with this"
+    - speaker: Vance
+      text: "you have a phone."
+    - speaker: Kay
+      text: "it points somewhere."
+    - speaker: Vance
+      text: "it tells you what building to watch."
+  question: "What building does the hidden marker identify?"
+
+answer: "TBD"
+
+hints: []

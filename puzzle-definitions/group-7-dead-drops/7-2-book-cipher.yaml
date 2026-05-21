@@ -1,0 +1,34 @@
+schema_version: "1.0"
+id: "7-2"
+group_id: 7
+type: conversation
+title: "Book Cipher"
+flavor: "The key is a public document. Anyone can find it. Almost no one will."
+
+params: {}
+
+content:
+  exchanges:
+    - speaker: Vance
+      text: "you know how to find a wikipedia article?"
+    - speaker: Kay
+      text: "yes"
+    - speaker: Vance
+      text: "find the one on blind trials. second paragraph. the numbers tell you which words."
+    - speaker: Vance
+      text: "**CIPHER**"
+    - speaker: Kay
+      text: "the words at those positions... they form something."
+    - speaker: Vance
+      text: "that's the message."
+    - speaker: Kay
+      text: "anyone could decode this if they had what you just gave me"
+    - speaker: Vance
+      text: "and no one will, unless I give it to them. use it once. then it's gone."
+    - speaker: Kay
+      text: "how many of these have you left in public documents"
+  question: "What code phrase does the cipher decode to?"
+
+answer: "TBD"
+
+hints: []

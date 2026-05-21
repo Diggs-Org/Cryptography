@@ -1,0 +1,32 @@
+schema_version: "1.0"
+id: "6-2"
+group_id: 6
+type: conversation
+title: "LSB Audio Encoding"
+flavor: "Vance goes dark for a week. He leaves something behind first."
+
+params: {}
+
+content:
+  exchanges:
+    - speaker: Vance
+      text: "I'm going dark for a week. when I come back, there will be a recording waiting."
+    - speaker: Kay
+      text: "what if you don't come back"
+    - speaker: Vance
+      text: "then find the file. it's labeled 'background.' you'll know what to do."
+    - speaker: Vance
+      text: "**CIPHER**"
+    - speaker: Kay
+      text: "there's something in this recording that isn't the recording"
+    - speaker: Vance
+      text: "same principle as the image. different medium."
+    - speaker: Kay
+      text: "you recorded this before you went dark. in case."
+    - speaker: Vance
+      text: "in case."
+  question: "Where does Vance want Kay to go if he doesn't return?"
+
+answer: "TBD"
+
+hints: []

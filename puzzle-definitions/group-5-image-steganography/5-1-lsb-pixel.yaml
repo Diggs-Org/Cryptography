@@ -1,0 +1,34 @@
+schema_version: "1.0"
+id: "5-1"
+group_id: 5
+type: conversation
+title: "LSB Pixel Hiding"
+flavor: "Vance sends a photo. Ordinary-looking. It isn't."
+
+params: {}
+
+content:
+  exchanges:
+    - speaker: Vance
+      text: "I'm sending you an image. nothing remarkable about it."
+    - speaker: Kay
+      text: "a park bench. why"
+    - speaker: Vance
+      text: "look at the image. not what's in it."
+    - speaker: Kay
+      text: "what am I looking for"
+    - speaker: Vance
+      text: "**CIPHER**"
+    - speaker: Kay
+      text: "there's something else in this file"
+    - speaker: Vance
+      text: "she left it where I'd find it. I'm passing it on."
+    - speaker: Kay
+      text: "she took this photo."
+    - speaker: Vance
+      text: "yes."
+  question: "What message did the predecessor hide in the image?"
+
+answer: "TBD"
+
+hints: []

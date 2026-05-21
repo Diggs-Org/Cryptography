@@ -1,0 +1,32 @@
+schema_version: "1.0"
+id: "2-2"
+group_id: 2
+type: conversation
+title: "Hex Encoding"
+flavor: "A legacy format. Vance is reaching into old toolkits."
+
+params: {}
+
+content:
+  exchanges:
+    - speaker: Vance
+      text: "the program started before either of us. some methods go back decades."
+    - speaker: Kay
+      text: "why does that matter now"
+    - speaker: Vance
+      text: "because some people still use them. you need to recognize this on sight."
+    - speaker: Vance
+      text: "**CIPHER**"
+    - speaker: Kay
+      text: "I've seen this format somewhere before."
+    - speaker: Vance
+      text: "good. then you know what to do."
+    - speaker: Kay
+      text: "who still communicates this way"
+    - speaker: Vance
+      text: "people who survived because they did."
+  question: "What date did Vance encode in the message?"
+
+answer: "TBD"
+
+hints: []

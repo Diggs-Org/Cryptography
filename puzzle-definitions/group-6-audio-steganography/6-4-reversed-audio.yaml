@@ -1,0 +1,32 @@
+schema_version: "1.0"
+id: "6-4"
+group_id: 6
+type: conversation
+title: "Reversed Audio"
+flavor: "Vance returns. He tells Kay to play the file backward."
+
+params: {}
+
+content:
+  exchanges:
+    - speaker: Vance
+      text: "I'm back. reverse the audio file I sent before I went dark."
+    - speaker: Kay
+      text: "reverse it? why"
+    - speaker: Vance
+      text: "because someone used this once and it saved my life. humor me."
+    - speaker: Vance
+      text: "**CIPHER**"
+    - speaker: Kay
+      text: "I can hear a name"
+    - speaker: Vance
+      text: "say it back to me."
+    - speaker: Kay
+      text: "that's who sold you out?"
+    - speaker: Vance
+      text: "that's who they'll tell you to trust. don't."
+  question: "Who does Vance warn Kay not to trust?"
+
+answer: "TBD"
+
+hints: []

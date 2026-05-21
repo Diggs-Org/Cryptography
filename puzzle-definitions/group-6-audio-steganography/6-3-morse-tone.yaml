@@ -1,0 +1,32 @@
+schema_version: "1.0"
+id: "6-3"
+group_id: 6
+type: conversation
+title: "Morse in Tone"
+flavor: "Beeps under the noise floor. Slow down. Listen differently."
+
+params: {}
+
+content:
+  exchanges:
+    - speaker: Vance
+      text: "the recording I sent has tones buried under the noise."
+    - speaker: Kay
+      text: "I don't hear anything"
+    - speaker: Vance
+      text: "slow it down. then listen again."
+    - speaker: Vance
+      text: "**CIPHER**"
+    - speaker: Kay
+      text: "long tones and short ones. there's a pattern."
+    - speaker: Vance
+      text: "old methods survive because they don't need infrastructure."
+    - speaker: Kay
+      text: "the voice in the recording — it isn't yours."
+    - speaker: Vance
+      text: "no. it isn't."
+  question: "Whose name is encoded in the audio tones?"
+
+answer: "TBD"
+
+hints: []

@@ -1,0 +1,32 @@
+schema_version: "1.0"
+id: "3-2"
+group_id: 3
+type: conversation
+title: "Null Cipher"
+flavor: "A story. Too long for Vance. Something is hidden inside it."
+
+params: {}
+
+content:
+  exchanges:
+    - speaker: Vance
+      text: "let me tell you about a contact I ran years back."
+    - speaker: Kay
+      text: "is this relevant"
+    - speaker: Vance
+      text: "everything I tell you is relevant."
+    - speaker: Vance
+      text: "**CIPHER**"
+    - speaker: Kay
+      text: "that was a long message. unusual for you."
+    - speaker: Vance
+      text: "read it again. more carefully."
+    - speaker: Kay
+      text: "is this how you communicated before things got easier"
+    - speaker: Vance
+      text: "the message hides in the noise. it still works that way."
+  question: "Whose name is Vance hiding in the story?"
+
+answer: "TBD"
+
+hints: []

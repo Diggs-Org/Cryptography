@@ -1,0 +1,34 @@
+schema_version: "1.0"
+id: "4-1"
+group_id: 4
+type: conversation
+title: "Zero-Width Characters"
+flavor: "Vance sends what looks like a blank message. It isn't."
+
+params: {}
+
+content:
+  exchanges:
+    - speaker: Vance
+      text: "**CIPHER**"
+    - speaker: Kay
+      text: "your message is empty"
+    - speaker: Vance
+      text: "is it."
+    - speaker: Kay
+      text: "I'm looking at it. there's nothing here."
+    - speaker: Vance
+      text: "look closer."
+    - speaker: Kay
+      text: "there's something in here I can't see"
+    - speaker: Vance
+      text: "who taught you to trust what renders?"
+    - speaker: Kay
+      text: "who taught you this"
+    - speaker: Vance
+      text: "someone who trusted the wrong person. the message will tell you more."
+  question: "What warning did Vance hide in the blank message?"
+
+answer: "TBD"
+
+hints: []

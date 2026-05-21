@@ -1,0 +1,32 @@
+schema_version: "1.0"
+id: "1-5"
+group_id: 1
+type: conversation
+title: "Columnar Transposition"
+flavor: "Something went wrong. The message came through scrambled — and fast."
+
+params: {}
+
+content:
+  exchanges:
+    - speaker: Vance
+      text: "abort. change of plans."
+    - speaker: Kay
+      text: "what happened"
+    - speaker: Vance
+      text: "doesn't matter. you need to meet someone instead."
+    - speaker: Vance
+      text: "**CIPHER**"
+    - speaker: Kay
+      text: "the letters are all there, just not in the right order"
+    - speaker: Vance
+      text: "figure it out. you have twenty minutes."
+    - speaker: Kay
+      text: "twenty minutes is not a lot of time"
+    - speaker: Vance
+      text: "it's what we have. go."
+  question: "Who does Kay need to meet?"
+
+answer: "TBD"
+
+hints: []

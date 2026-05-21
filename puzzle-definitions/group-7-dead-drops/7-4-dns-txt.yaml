@@ -1,0 +1,34 @@
+schema_version: "1.0"
+id: "7-4"
+group_id: 7
+type: conversation
+title: "DNS TXT Record"
+flavor: "A domain name. The message is in the infrastructure, not the website."
+
+params: {}
+
+content:
+  exchanges:
+    - speaker: Vance
+      text: "there's a domain. I'll give you the name."
+    - speaker: Kay
+      text: "a website?"
+    - speaker: Vance
+      text: "not the site. look at what the domain itself carries."
+    - speaker: Vance
+      text: "**CIPHER**"
+    - speaker: Kay
+      text: "there's something here that doesn't belong. buried in the records."
+    - speaker: Vance
+      text: "you know what to do with it."
+    - speaker: Kay
+      text: "how long has this been sitting in a public record"
+    - speaker: Vance
+      text: "seven years. no one thought to look."
+    - speaker: Kay
+      text: "until now."
+  question: "What location is encoded in the DNS record?"
+
+answer: "TBD"
+
+hints: []

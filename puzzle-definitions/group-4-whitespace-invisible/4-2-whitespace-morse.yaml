@@ -1,0 +1,32 @@
+schema_version: "1.0"
+id: "4-2"
+group_id: 4
+type: conversation
+title: "Whitespace Morse"
+flavor: "Spaces and tabs. The rhythm between words is the message."
+
+params: {}
+
+content:
+  exchanges:
+    - speaker: Vance
+      text: "everything looks like nothing until you know what to look for."
+    - speaker: Kay
+      text: "is this philosophy or tradecraft"
+    - speaker: Vance
+      text: "both. look at the spacing in what I send next."
+    - speaker: Vance
+      text: "**CIPHER**"
+    - speaker: Kay
+      text: "the gaps between words are uneven. intentionally?"
+    - speaker: Vance
+      text: "you've done harder."
+    - speaker: Kay
+      text: "why go to all this trouble when we have encryption"
+    - speaker: Vance
+      text: "because this survives screenshots. it hides in logs. it passes through filters clean."
+  question: "What time should Kay arrive?"
+
+answer: "TBD"
+
+hints: []

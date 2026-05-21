@@ -1,0 +1,34 @@
+schema_version: "1.0"
+id: "3-1"
+group_id: 3
+type: conversation
+title: "Acrostic"
+flavor: "Vance sends what looks like small talk. Look closer."
+
+params: {}
+
+content:
+  exchanges:
+    - speaker: Vance
+      text: "how are you settling in"
+    - speaker: Kay
+      text: "fine. still don't know who I'm actually working for."
+    - speaker: Vance
+      text: "relax. read my next few messages carefully."
+    - speaker: Kay
+      text: "you're about to send me small talk, aren't you"
+    - speaker: Vance
+      text: "**CIPHER**"
+    - speaker: Kay
+      text: "I see it."
+    - speaker: Vance
+      text: "someone watching would see nothing. that's the point."
+    - speaker: Kay
+      text: "why not just tell me directly"
+    - speaker: Vance
+      text: "because direct is how you get traced."
+  question: "Where is Kay supposed to meet Vance?"
+
+answer: "TBD"
+
+hints: []
