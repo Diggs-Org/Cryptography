@@ -3,7 +3,7 @@ id: "5-3"
 group_id: 5
 type: conversation
 title: "Alpha Channel"
-flavor: "The transparency data. She hid something in the parts that shouldn't be visible."
+flavor: "A third message. She hid something in the places no one would think to look."
 
 params: {}
 
@@ -20,14 +20,14 @@ content:
     - speaker: Vance
       text: "**CIPHER**"
     - speaker: Kay
-      text: "the transparency data? I wouldn't have thought to look there."
+      text: "I wouldn't have thought to look there."
     - speaker: Vance
       text: "that's why she put it there."
     - speaker: Kay
       text: "a name. the name she was trying to surface?"
     - speaker: Vance
       text: "the name that someone in the program wanted buried."
-  question: "Whose name did the predecessor hide in the alpha channel?"
+  question: "Whose name did the predecessor hide in the image?"
 
 answer: "TBD"
 

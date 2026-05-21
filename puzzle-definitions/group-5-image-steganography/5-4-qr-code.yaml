@@ -14,17 +14,17 @@ content:
     - speaker: Kay
       text: "the image again?"
     - speaker: Vance
-      text: "zoom into the upper-right corner. there's a pattern in what looks like noise."
+      text: "look past the surface of it."
     - speaker: Kay
-      text: "I see something. what is it"
+      text: "there's something in here. a pattern."
     - speaker: Vance
       text: "**CIPHER**"
     - speaker: Kay
-      text: "scan it?"
+      text: "what do I do with this"
     - speaker: Vance
-      text: "yes."
+      text: "you have a phone."
     - speaker: Kay
-      text: "it points somewhere. confirms something."
+      text: "it points somewhere."
     - speaker: Vance
       text: "it tells you what building to watch."
   question: "What building does the hidden marker identify?"
